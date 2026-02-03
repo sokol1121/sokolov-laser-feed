@@ -1,0 +1,1282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2026-01-30 11:10">
+  <shop>
+    <name>ООО Соколов Лазер</name>
+    <company>ООО Соколов Лазер</company>
+    <url>https://www.sokolov-laser.ru</url>
+    <currencies>
+      <currency id="RUR" rate="1"/>
+    </currencies>
+    <categories>
+    <category id="1">Удаление татуажа</category>
+    <category id="2">Шлифовка шрамов</category>
+    <category id="3">Шлифовка рубцов</category>
+    <category id="4">Лазерная эпиляция</category>
+    <category id="5">Удаление татуировок</category>
+    </categories>
+    <offers>
+    <offer id="Ylia-1" available="true">
+      <name>Удаление татуажа - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <categoryId>1</categoryId>
+      <price>5000</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_1</param>
+    </offer>
+    <offer id="Ylia-2" available="true">
+      <name>Шлифовка шрамов - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <categoryId>2</categoryId>
+      <price>5000</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_2</param>
+    </offer>
+    <offer id="Ylia-3" available="true">
+      <name>Шлифовка рубцов - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <categoryId>3</categoryId>
+      <price>5000</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_3</param>
+    </offer>
+    <offer id="Ylia-4" available="true">
+      <name>Тотальное бикини + подмышки - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>5350</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_4</param>
+    </offer>
+    <offer id="Ylia-5" available="true">
+      <name>Тотальное бикини + подмышки + голени с коленями - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>7190</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_5</param>
+    </offer>
+    <offer id="Ylia-6" available="true">
+      <name>Тотальное бикини + подмышки + ноги полностью - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>8990</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_6</param>
+    </offer>
+    <offer id="Ylia-7" available="true">
+      <name>Тотальное бикини + подмышки + голени с коленями + руки до локтя - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>8990</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_7</param>
+    </offer>
+    <offer id="Ylia-8" available="true">
+      <name>Голени + подмышки - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>5350</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_8</param>
+    </offer>
+    <offer id="Ylia-9" available="true">
+      <name>Тотальное бикини + голени - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>6490</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_9</param>
+    </offer>
+    <offer id="Ylia-10" available="true">
+      <name>Тотальное бикини + ноги полностью - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>8190</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_10</param>
+    </offer>
+    <offer id="Ylia-11" available="true">
+      <name>Тотальное бикини + подмышки + руки полностью - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>8190</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_11</param>
+    </offer>
+    <offer id="Ylia-12" available="true">
+      <name>Тотальное бикини + подмышки + ноги полностью + руки до локтя - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>10790</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_12</param>
+    </offer>
+    <offer id="Ylia-13" available="true">
+      <name>Тотальное бикини + подмышки + ноги полностью + руки полностью - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>12590</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_13</param>
+    </offer>
+    <offer id="Ylia-14" available="true">
+      <name>Все тело (любые зоны, кроме лица и шеи) - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>19790</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_14</param>
+    </offer>
+    <offer id="Ylia-15" available="true">
+      <name>Голени с коленями + руки до локтя - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>6190</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_15</param>
+    </offer>
+    <offer id="Ylia-16" available="true">
+      <name>Ноги полностью + руки полностью - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>8990</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_16</param>
+    </offer>
+    <offer id="Ylia-17" available="true">
+      <name>Тотальное бикини (с межъягодичной зоной) - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>3990</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_17</param>
+    </offer>
+    <offer id="Ylia-18" available="true">
+      <name>Бикини классика - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>2090</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_18</param>
+    </offer>
+    <offer id="Ylia-19" available="true">
+      <name>Белая линия живота - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>1390</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_19</param>
+    </offer>
+    <offer id="Ylia-20" available="true">
+      <name>Ягодицы полностью - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>3590</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_20</param>
+    </offer>
+    <offer id="Ylia-21" available="true">
+      <name>Живот полностью - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>3590</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_21</param>
+    </offer>
+    <offer id="Ylia-22" available="true">
+      <name>Ареолы - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>1480</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_22</param>
+    </offer>
+    <offer id="Ylia-23" available="true">
+      <name>Полоса между грудей - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>1480</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_23</param>
+    </offer>
+    <offer id="Ylia-24" available="true">
+      <name>Грудь полностью - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>3590</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_24</param>
+    </offer>
+    <offer id="Ylia-25" available="true">
+      <name>Подмышечные впадины - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>1990</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_25</param>
+    </offer>
+    <offer id="Ylia-26" available="true">
+      <name>Руки до локтя - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>3790</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_26</param>
+    </offer>
+    <offer id="Ylia-27" available="true">
+      <name>Руки выше локтя - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>2890</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_27</param>
+    </offer>
+    <offer id="Ylia-28" available="true">
+      <name>Руки полностью - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>4990</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_28</param>
+    </offer>
+    <offer id="Ylia-29" available="true">
+      <name>Голени с коленями - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>3990</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_29</param>
+    </offer>
+    <offer id="Ylia-30" available="true">
+      <name>Ноги полностью - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>6990</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_30</param>
+    </offer>
+    <offer id="Ylia-31" available="true">
+      <name>Бедра (без коленей) - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>3990</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_31</param>
+    </offer>
+    <offer id="Ylia-32" available="true">
+      <name>Передняя или задняя поверхность бедер - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>2080</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_32</param>
+    </offer>
+    <offer id="Ylia-33" available="true">
+      <name>Спина полностью - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>7390</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_33</param>
+    </offer>
+    <offer id="Ylia-34" available="true">
+      <name>Нижняя треть спины - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>2890</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_34</param>
+    </offer>
+    <offer id="Ylia-35" available="true">
+      <name>Плечи (лопатки) - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>3990</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_35</param>
+    </offer>
+    <offer id="Ylia-36" available="true">
+      <name>Верхняя губа - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>1290</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_36</param>
+    </offer>
+    <offer id="Ylia-37" available="true">
+      <name>Подбородок - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>1290</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_37</param>
+    </offer>
+    <offer id="Ylia-38" available="true">
+      <name>Щеки и бакенбарды - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>1490</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_38</param>
+    </offer>
+    <offer id="Ylia-39" available="true">
+      <name>Шея (передняя часть) - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>2090</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_39</param>
+    </offer>
+    <offer id="Ylia-40" available="true">
+      <name>Шея (задняя часть) - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>2090</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_40</param>
+    </offer>
+    <offer id="Ylia-41" available="true">
+      <name>Коррекция линии роста волос - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>2090</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_41</param>
+    </offer>
+    <offer id="Ylia-42" available="true">
+      <name>Межбровье - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>750</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_42</param>
+    </offer>
+    <offer id="Ylia-43" available="true">
+      <name>Лицо полностью (без коррекции линии роста волос) - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>3990</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_43</param>
+    </offer>
+    <offer id="Ylia-44" available="true">
+      <name>Дополнительная малая зона - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>850</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_44</param>
+    </offer>
+    <offer id="Ylia-45" available="true">
+      <name>Дополнительная большая зона - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>2300</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_45</param>
+    </offer>
+    <offer id="Ylia-46" available="true">
+      <name>Удаление тату (2×2 см) на Lutronic Spectra XT - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>4000</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_46</param>
+    </offer>
+    <offer id="Ylia-47" available="true">
+      <name>Удаление тату (2×2 см) на PicoSure - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>6000</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_47</param>
+    </offer>
+    <offer id="Ylia-48" available="true">
+      <name>Удаление тату (5×5 см) на Lutronic Spectra XT - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>4500</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_48</param>
+    </offer>
+    <offer id="Ylia-49" available="true">
+      <name>Удаление тату (5×5 см) на PicoSure - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>7000</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_49</param>
+    </offer>
+    <offer id="Ylia-50" available="true">
+      <name>Удаление тату (7×8 см) на Lutronic Spectra XT - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>6000</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_50</param>
+    </offer>
+    <offer id="Ylia-51" available="true">
+      <name>Удаление тату (7×8 см) на PicoSure - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>9500</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_51</param>
+    </offer>
+    <offer id="Ylia-52" available="true">
+      <name>Удаление тату (10×10 см) на Lutronic Spectra XT - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>12000</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_52</param>
+    </offer>
+    <offer id="Ylia-53" available="true">
+      <name>Удаление тату (10×10 см) на PicoSure - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>19000</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_53</param>
+    </offer>
+    <offer id="Ylia-54" available="true">
+      <name>Удаление тату (10×15 см) на Lutronic Spectra XT - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>16000</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_54</param>
+    </offer>
+    <offer id="Ylia-55" available="true">
+      <name>Удаление тату (10×15 см) на PicoSure - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>28000</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_55</param>
+    </offer>
+    <offer id="Ylia-56" available="true">
+      <name>Удаление тату (10×20 см) на Lutronic Spectra XT - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>20000</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_56</param>
+    </offer>
+    <offer id="Ylia-57" available="true">
+      <name>Удаление тату (10×20 см) на PicoSure - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>35000</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_57</param>
+    </offer>
+    <offer id="Ylia-58" available="true">
+      <name>Удаление татуажа бровей на Lutronic Spectra XT - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>5000</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_58</param>
+    </offer>
+    <offer id="Ylia-59" available="true">
+      <name>Удаление татуажа бровей на PicoSure - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>9900</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_59</param>
+    </offer>
+    <offer id="Ylia-60" available="true">
+      <name>Удаление татуажа губ на Lutronic Spectra XT - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>5000</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_60</param>
+    </offer>
+    <offer id="Ylia-61" available="true">
+      <name>Удаление татуажа губ на PicoSure - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>9900</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_61</param>
+    </offer>
+    <offer id="Ylia-62" available="true">
+      <name>Удаление межресничного пространства на Lutronic Spectra XT - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>5000</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_62</param>
+    </offer>
+    <offer id="Ylia-63" available="true">
+      <name>Удаление межресничного пространства на PicoSure - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>9900</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_63</param>
+    </offer>
+    <offer id="Ylia-64" available="true">
+      <name>Удаление стрелок на Lutronic Spectra XT - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>9000</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_64</param>
+    </offer>
+    <offer id="Ylia-65" available="true">
+      <name>Удаление стрелок на PicoSure - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>13000</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_65</param>
+    </offer>
+    <offer id="Ylia-66" available="true">
+      <name>Удаление кончиков стрелок на Lutronic Spectra XT - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>5900</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_66</param>
+    </offer>
+    <offer id="Ylia-67" available="true">
+      <name>Удаление кончиков стрелок на PicoSure - Шиптицкая Юлия Дмитриевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>7900</price>
+      <currencyId>RUR</currencyId>
+      <description>Шиптицкая Юлия Дмитриевна — врач-косметолог, специалист по лазерному удалению татуировок и работе с кожей. Профессионально и аккуратно проводит процедуры, подбирая параметры лазера индивидуально под каждый тип кожи и пигмента. В работе делает упор на безопасность, минимальную травматичность и получение максимально чистого результата без рубцов и осложнений.</description>
+      <picture>https://ibb.co/rR57v2pS</picture>
+      <param name="doctor">Шиптицкая Юлия Дмитриевна</param>
+      <param name="specialty">косметолог</param>
+      <param name="experience_years">7</param>
+      <param name="reviews_count">127</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349952-shiptickaya/</param>
+      <param name="clinic_id">clinic_67</param>
+    </offer>
+    <offer id="Lilia-1" available="true">
+      <name>Удаление татужа - Вакарчук Лилия Анатольевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>5000</price>
+      <currencyId>RUR</currencyId>
+      <description>Вакарчук Лилия Анатольевна — врач-косметолог, дерматовенеролог с опытом работы 12 лет. Специалист с высшим медицинским образованием, который профессионально работает с кожей и решает как эстетические, так и дерматологические задачи. В своей практике делает упор на безопасность, точность и прогнозируемый результат.</description>
+      <picture>https://ibb.co/rK0gXx4S</picture>
+      <param name="doctor">Вакарчук Лилия Анатольевна</param>
+      <param name="specialty">дерматовенеролог</param>
+      <param name="experience_years">12</param>
+      <param name="reviews_count">189</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349944-vakarchuk/</param>
+      <param name="clinic_id">clinic_68</param>
+    </offer>
+    <offer id="Lilia-2" available="true">
+      <name>Удаление тату (2×2 см) на Lutronic Spectra XT - Вакарчук Лилия Анатольевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>4000</price>
+      <currencyId>RUR</currencyId>
+      <description>Вакарчук Лилия Анатольевна — врач-косметолог, дерматовенеролог с опытом работы 12 лет. Специалист с высшим медицинским образованием, который профессионально работает с кожей и решает как эстетические, так и дерматологические задачи. В своей практике делает упор на безопасность, точность и прогнозируемый результат.</description>
+      <picture>https://ibb.co/rK0gXx4S</picture>
+      <param name="doctor">Вакарчук Лилия Анатольевна</param>
+      <param name="specialty">дерматовенеролог</param>
+      <param name="experience_years">12</param>
+      <param name="reviews_count">189</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349944-vakarchuk/</param>
+      <param name="clinic_id">clinic_69</param>
+    </offer>
+    <offer id="Lilia-3" available="true">
+      <name>Удаление тату (2×2 см) на PicoSure - Вакарчук Лилия Анатольевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>6000</price>
+      <currencyId>RUR</currencyId>
+      <description>Вакарчук Лилия Анатольевна — врач-косметолог, дерматовенеролог с опытом работы 12 лет. Специалист с высшим медицинским образованием, который профессионально работает с кожей и решает как эстетические, так и дерматологические задачи. В своей практике делает упор на безопасность, точность и прогнозируемый результат.</description>
+      <picture>https://ibb.co/rK0gXx4S</picture>
+      <param name="doctor">Вакарчук Лилия Анатольевна</param>
+      <param name="specialty">дерматовенеролог</param>
+      <param name="experience_years">12</param>
+      <param name="reviews_count">189</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349944-vakarchuk/</param>
+      <param name="clinic_id">clinic_70</param>
+    </offer>
+    <offer id="Lilia-4" available="true">
+      <name>Удаление тату (5×5 см) на Lutronic Spectra XT - Вакарчук Лилия Анатольевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>4500</price>
+      <currencyId>RUR</currencyId>
+      <description>Вакарчук Лилия Анатольевна — врач-косметолог, дерматовенеролог с опытом работы 12 лет. Специалист с высшим медицинским образованием, который профессионально работает с кожей и решает как эстетические, так и дерматологические задачи. В своей практике делает упор на безопасность, точность и прогнозируемый результат.</description>
+      <picture>https://ibb.co/rK0gXx4S</picture>
+      <param name="doctor">Вакарчук Лилия Анатольевна</param>
+      <param name="specialty">дерматовенеролог</param>
+      <param name="experience_years">12</param>
+      <param name="reviews_count">189</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349944-vakarchuk/</param>
+      <param name="clinic_id">clinic_71</param>
+    </offer>
+    <offer id="Lilia-5" available="true">
+      <name>Удаление тату (5×5 см) на PicoSure - Вакарчук Лилия Анатольевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>7000</price>
+      <currencyId>RUR</currencyId>
+      <description>Вакарчук Лилия Анатольевна — врач-косметолог, дерматовенеролог с опытом работы 12 лет. Специалист с высшим медицинским образованием, который профессионально работает с кожей и решает как эстетические, так и дерматологические задачи. В своей практике делает упор на безопасность, точность и прогнозируемый результат.</description>
+      <picture>https://ibb.co/rK0gXx4S</picture>
+      <param name="doctor">Вакарчук Лилия Анатольевна</param>
+      <param name="specialty">дерматовенеролог</param>
+      <param name="experience_years">12</param>
+      <param name="reviews_count">189</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349944-vakarchuk/</param>
+      <param name="clinic_id">clinic_72</param>
+    </offer>
+    <offer id="Lilia-6" available="true">
+      <name>Удаление тату (7×8 см) на Lutronic Spectra XT - Вакарчук Лилия Анатольевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>6000</price>
+      <currencyId>RUR</currencyId>
+      <description>Вакарчук Лилия Анатольевна — врач-косметолог, дерматовенеролог с опытом работы 12 лет. Специалист с высшим медицинским образованием, который профессионально работает с кожей и решает как эстетические, так и дерматологические задачи. В своей практике делает упор на безопасность, точность и прогнозируемый результат.</description>
+      <picture>https://ibb.co/rK0gXx4S</picture>
+      <param name="doctor">Вакарчук Лилия Анатольевна</param>
+      <param name="specialty">дерматовенеролог</param>
+      <param name="experience_years">12</param>
+      <param name="reviews_count">189</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349944-vakarchuk/</param>
+      <param name="clinic_id">clinic_73</param>
+    </offer>
+    <offer id="Lilia-7" available="true">
+      <name>Удаление тату (7×8 см) на PicoSure - Вакарчук Лилия Анатольевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>9500</price>
+      <currencyId>RUR</currencyId>
+      <description>Вакарчук Лилия Анатольевна — врач-косметолог, дерматовенеролог с опытом работы 12 лет. Специалист с высшим медицинским образованием, который профессионально работает с кожей и решает как эстетические, так и дерматологические задачи. В своей практике делает упор на безопасность, точность и прогнозируемый результат.</description>
+      <picture>https://ibb.co/rK0gXx4S</picture>
+      <param name="doctor">Вакарчук Лилия Анатольевна</param>
+      <param name="specialty">дерматовенеролог</param>
+      <param name="experience_years">12</param>
+      <param name="reviews_count">189</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349944-vakarchuk/</param>
+      <param name="clinic_id">clinic_74</param>
+    </offer>
+    <offer id="Lilia-8" available="true">
+      <name>Удаление тату (10×10 см) на Lutronic Spectra XT - Вакарчук Лилия Анатольевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>12000</price>
+      <currencyId>RUR</currencyId>
+      <description>Вакарчук Лилия Анатольевна — врач-косметолог, дерматовенеролог с опытом работы 12 лет. Специалист с высшим медицинским образованием, который профессионально работает с кожей и решает как эстетические, так и дерматологические задачи. В своей практике делает упор на безопасность, точность и прогнозируемый результат.</description>
+      <picture>https://ibb.co/rK0gXx4S</picture>
+      <param name="doctor">Вакарчук Лилия Анатольевна</param>
+      <param name="specialty">дерматовенеролог</param>
+      <param name="experience_years">12</param>
+      <param name="reviews_count">189</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349944-vakarchuk/</param>
+      <param name="clinic_id">clinic_75</param>
+    </offer>
+    <offer id="Lilia-9" available="true">
+      <name>Удаление тату (10×10 см) на PicoSure - Вакарчук Лилия Анатольевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>19000</price>
+      <currencyId>RUR</currencyId>
+      <description>Вакарчук Лилия Анатольевна — врач-косметолог, дерматовенеролог с опытом работы 12 лет. Специалист с высшим медицинским образованием, который профессионально работает с кожей и решает как эстетические, так и дерматологические задачи. В своей практике делает упор на безопасность, точность и прогнозируемый результат.</description>
+      <picture>https://ibb.co/rK0gXx4S</picture>
+      <param name="doctor">Вакарчук Лилия Анатольевна</param>
+      <param name="specialty">дерматовенеролог</param>
+      <param name="experience_years">12</param>
+      <param name="reviews_count">189</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349944-vakarchuk/</param>
+      <param name="clinic_id">clinic_76</param>
+    </offer>
+    <offer id="Lilia-10" available="true">
+      <name>Удаление тату (10×15 см) на Lutronic Spectra XT - Вакарчук Лилия Анатольевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>16000</price>
+      <currencyId>RUR</currencyId>
+      <description>Вакарчук Лилия Анатольевна — врач-косметолог, дерматовенеролог с опытом работы 12 лет. Специалист с высшим медицинским образованием, который профессионально работает с кожей и решает как эстетические, так и дерматологические задачи. В своей практике делает упор на безопасность, точность и прогнозируемый результат.</description>
+      <picture>https://ibb.co/rK0gXx4S</picture>
+      <param name="doctor">Вакарчук Лилия Анатольевна</param>
+      <param name="specialty">дерматовенеролог</param>
+      <param name="experience_years">12</param>
+      <param name="reviews_count">189</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349944-vakarchuk/</param>
+      <param name="clinic_id">clinic_77</param>
+    </offer>
+    <offer id="Lilia-11" available="true">
+      <name>Удаление тату (10×15 см) на PicoSure - Вакарчук Лилия Анатольевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>28000</price>
+      <currencyId>RUR</currencyId>
+      <description>Вакарчук Лилия Анатольевна — врач-косметолог, дерматовенеролог с опытом работы 12 лет. Специалист с высшим медицинским образованием, который профессионально работает с кожей и решает как эстетические, так и дерматологические задачи. В своей практике делает упор на безопасность, точность и прогнозируемый результат.</description>
+      <picture>https://ibb.co/rK0gXx4S</picture>
+      <param name="doctor">Вакарчук Лилия Анатольевна</param>
+      <param name="specialty">дерматовенеролог</param>
+      <param name="experience_years">12</param>
+      <param name="reviews_count">189</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349944-vakarchuk/</param>
+      <param name="clinic_id">clinic_78</param>
+    </offer>
+    <offer id="Lilia-12" available="true">
+      <name>Удаление тату (10×20 см) на Lutronic Spectra XT - Вакарчук Лилия Анатольевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>20000</price>
+      <currencyId>RUR</currencyId>
+      <description>Вакарчук Лилия Анатольевна — врач-косметолог, дерматовенеролог с опытом работы 12 лет. Специалист с высшим медицинским образованием, который профессионально работает с кожей и решает как эстетические, так и дерматологические задачи. В своей практике делает упор на безопасность, точность и прогнозируемый результат.</description>
+      <picture>https://ibb.co/rK0gXx4S</picture>
+      <param name="doctor">Вакарчук Лилия Анатольевна</param>
+      <param name="specialty">дерматовенеролог</param>
+      <param name="experience_years">12</param>
+      <param name="reviews_count">189</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349944-vakarchuk/</param>
+      <param name="clinic_id">clinic_79</param>
+    </offer>
+    <offer id="Lilia-13" available="true">
+      <name>Удаление тату (10×20 см) на PicoSure - Вакарчук Лилия Анатольевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>35000</price>
+      <currencyId>RUR</currencyId>
+      <description>Вакарчук Лилия Анатольевна — врач-косметолог, дерматовенеролог с опытом работы 12 лет. Специалист с высшим медицинским образованием, который профессионально работает с кожей и решает как эстетические, так и дерматологические задачи. В своей практике делает упор на безопасность, точность и прогнозируемый результат.</description>
+      <picture>https://ibb.co/rK0gXx4S</picture>
+      <param name="doctor">Вакарчук Лилия Анатольевна</param>
+      <param name="specialty">дерматовенеролог</param>
+      <param name="experience_years">12</param>
+      <param name="reviews_count">189</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349944-vakarchuk/</param>
+      <param name="clinic_id">clinic_80</param>
+    </offer>
+    <offer id="Lilia-14" available="true">
+      <name>Удаление татуажа бровей на Lutronic Spectra XT - Вакарчук Лилия Анатольевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>5000</price>
+      <currencyId>RUR</currencyId>
+      <description>Вакарчук Лилия Анатольевна — врач-косметолог, дерматовенеролог с опытом работы 12 лет. Специалист с высшим медицинским образованием, который профессионально работает с кожей и решает как эстетические, так и дерматологические задачи. В своей практике делает упор на безопасность, точность и прогнозируемый результат.</description>
+      <picture>https://ibb.co/rK0gXx4S</picture>
+      <param name="doctor">Вакарчук Лилия Анатольевна</param>
+      <param name="specialty">дерматовенеролог</param>
+      <param name="experience_years">12</param>
+      <param name="reviews_count">189</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349944-vakarchuk/</param>
+      <param name="clinic_id">clinic_81</param>
+    </offer>
+    <offer id="Lilia-15" available="true">
+      <name>Удаление татуажа бровей на PicoSure - Вакарчук Лилия Анатольевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>9900</price>
+      <currencyId>RUR</currencyId>
+      <description>Вакарчук Лилия Анатольевна — врач-косметолог, дерматовенеролог с опытом работы 12 лет. Специалист с высшим медицинским образованием, который профессионально работает с кожей и решает как эстетические, так и дерматологические задачи. В своей практике делает упор на безопасность, точность и прогнозируемый результат.</description>
+      <picture>https://ibb.co/rK0gXx4S</picture>
+      <param name="doctor">Вакарчук Лилия Анатольевна</param>
+      <param name="specialty">дерматовенеролог</param>
+      <param name="experience_years">12</param>
+      <param name="reviews_count">189</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349944-vakarchuk/</param>
+      <param name="clinic_id">clinic_82</param>
+    </offer>
+    <offer id="Lilia-16" available="true">
+      <name>Удаление татуажа губ на Lutronic Spectra XT - Вакарчук Лилия Анатольевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>5000</price>
+      <currencyId>RUR</currencyId>
+      <description>Вакарчук Лилия Анатольевна — врач-косметолог, дерматовенеролог с опытом работы 12 лет. Специалист с высшим медицинским образованием, который профессионально работает с кожей и решает как эстетические, так и дерматологические задачи. В своей практике делает упор на безопасность, точность и прогнозируемый результат.</description>
+      <picture>https://ibb.co/rK0gXx4S</picture>
+      <param name="doctor">Вакарчук Лилия Анатольевна</param>
+      <param name="specialty">дерматовенеролог</param>
+      <param name="experience_years">12</param>
+      <param name="reviews_count">189</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349944-vakarchuk/</param>
+      <param name="clinic_id">clinic_83</param>
+    </offer>
+    <offer id="Lilia-17" available="true">
+      <name>Удаление татуажа губ на PicoSure - Вакарчук Лилия Анатольевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>9900</price>
+      <currencyId>RUR</currencyId>
+      <description>Вакарчук Лилия Анатольевна — врач-косметолог, дерматовенеролог с опытом работы 12 лет. Специалист с высшим медицинским образованием, который профессионально работает с кожей и решает как эстетические, так и дерматологические задачи. В своей практике делает упор на безопасность, точность и прогнозируемый результат.</description>
+      <picture>https://ibb.co/rK0gXx4S</picture>
+      <param name="doctor">Вакарчук Лилия Анатольевна</param>
+      <param name="specialty">дерматовенеролог</param>
+      <param name="experience_years">12</param>
+      <param name="reviews_count">189</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349944-vakarchuk/</param>
+      <param name="clinic_id">clinic_84</param>
+    </offer>
+    <offer id="Lilia-18" available="true">
+      <name>Удаление межресничного пространства на Lutronic Spectra XT - Вакарчук Лилия Анатольевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>5000</price>
+      <currencyId>RUR</currencyId>
+      <description>Вакарчук Лилия Анатольевна — врач-косметолог, дерматовенеролог с опытом работы 12 лет. Специалист с высшим медицинским образованием, который профессионально работает с кожей и решает как эстетические, так и дерматологические задачи. В своей практике делает упор на безопасность, точность и прогнозируемый результат.</description>
+      <picture>https://ibb.co/rK0gXx4S</picture>
+      <param name="doctor">Вакарчук Лилия Анатольевна</param>
+      <param name="specialty">дерматовенеролог</param>
+      <param name="experience_years">12</param>
+      <param name="reviews_count">189</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349944-vakarchuk/</param>
+      <param name="clinic_id">clinic_85</param>
+    </offer>
+    <offer id="Lilia-19" available="true">
+      <name>Удаление межресничного пространства на PicoSure - Вакарчук Лилия Анатольевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>9900</price>
+      <currencyId>RUR</currencyId>
+      <description>Вакарчук Лилия Анатольевна — врач-косметолог, дерматовенеролог с опытом работы 12 лет. Специалист с высшим медицинским образованием, который профессионально работает с кожей и решает как эстетические, так и дерматологические задачи. В своей практике делает упор на безопасность, точность и прогнозируемый результат.</description>
+      <picture>https://ibb.co/rK0gXx4S</picture>
+      <param name="doctor">Вакарчук Лилия Анатольевна</param>
+      <param name="specialty">дерматовенеролог</param>
+      <param name="experience_years">12</param>
+      <param name="reviews_count">189</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349944-vakarchuk/</param>
+      <param name="clinic_id">clinic_86</param>
+    </offer>
+    <offer id="Lilia-20" available="true">
+      <name>Удаление стрелок на Lutronic Spectra XT - Вакарчук Лилия Анатольевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>9000</price>
+      <currencyId>RUR</currencyId>
+      <description>Вакарчук Лилия Анатольевна — врач-косметолог, дерматовенеролог с опытом работы 12 лет. Специалист с высшим медицинским образованием, который профессионально работает с кожей и решает как эстетические, так и дерматологические задачи. В своей практике делает упор на безопасность, точность и прогнозируемый результат.</description>
+      <picture>https://ibb.co/rK0gXx4S</picture>
+      <param name="doctor">Вакарчук Лилия Анатольевна</param>
+      <param name="specialty">дерматовенеролог</param>
+      <param name="experience_years">12</param>
+      <param name="reviews_count">189</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349944-vakarchuk/</param>
+      <param name="clinic_id">clinic_87</param>
+    </offer>
+    <offer id="Lilia-21" available="true">
+      <name>Удаление стрелок на PicoSure - Вакарчук Лилия Анатольевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>13000</price>
+      <currencyId>RUR</currencyId>
+      <description>Вакарчук Лилия Анатольевна — врач-косметолог, дерматовенеролог с опытом работы 12 лет. Специалист с высшим медицинским образованием, который профессионально работает с кожей и решает как эстетические, так и дерматологические задачи. В своей практике делает упор на безопасность, точность и прогнозируемый результат.</description>
+      <picture>https://ibb.co/rK0gXx4S</picture>
+      <param name="doctor">Вакарчук Лилия Анатольевна</param>
+      <param name="specialty">дерматовенеролог</param>
+      <param name="experience_years">12</param>
+      <param name="reviews_count">189</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349944-vakarchuk/</param>
+      <param name="clinic_id">clinic_88</param>
+    </offer>
+    <offer id="Lilia-22" available="true">
+      <name>Удаление кончиков стрелок на Lutronic Spectra XT - Вакарчук Лилия Анатольевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>5900</price>
+      <currencyId>RUR</currencyId>
+      <description>Вакарчук Лилия Анатольевна — врач-косметолог, дерматовенеролог с опытом работы 12 лет. Специалист с высшим медицинским образованием, который профессионально работает с кожей и решает как эстетические, так и дерматологические задачи. В своей практике делает упор на безопасность, точность и прогнозируемый результат.</description>
+      <picture>https://ibb.co/rK0gXx4S</picture>
+      <param name="doctor">Вакарчук Лилия Анатольевна</param>
+      <param name="specialty">дерматовенеролог</param>
+      <param name="experience_years">12</param>
+      <param name="reviews_count">189</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349944-vakarchuk/</param>
+      <param name="clinic_id">clinic_89</param>
+    </offer>
+    <offer id="Lilia-23" available="true">
+      <name>Удаление кончиков стрелок на PicoSure - Вакарчук Лилия Анатольевна</name>
+      <url>https://n557430.yclients.com</url>
+      <price>7900</price>
+      <currencyId>RUR</currencyId>
+      <description>Вакарчук Лилия Анатольевна — врач-косметолог, дерматовенеролог с опытом работы 12 лет. Специалист с высшим медицинским образованием, который профессионально работает с кожей и решает как эстетические, так и дерматологические задачи. В своей практике делает упор на безопасность, точность и прогнозируемый результат.</description>
+      <picture>https://ibb.co/rK0gXx4S</picture>
+      <param name="doctor">Вакарчук Лилия Анатольевна</param>
+      <param name="specialty">дерматовенеролог</param>
+      <param name="experience_years">12</param>
+      <param name="reviews_count">189</param>
+      <param name="doctor_profile_url">https://prodoctorov.ru/moskva/vrach/1349944-vakarchuk/</param>
+      <param name="clinic_id">clinic_90</param>
+    </offer>
+    </offers>
+  </shop>
+</yml_catalog>
