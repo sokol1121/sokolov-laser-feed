@@ -72,6 +72,25 @@
     transition:.3s; opacity:0; z-index:99;}
   .toast.show{transform:translateX(-50%); opacity:1;}
   @media (max-width:620px){ .nav{height:70px; gap:12px;} footer{padding:0 12px 18px;} }
+
+  @media (max-width:640px){
+    /* шапка не влезала: кнопка наезжала на логотип */
+    .nav .btn{padding:6px 6px 6px 14px; font-size:13px; min-height:42px;}
+    .nav .btn::after{width:26px; height:26px; flex:0 0 26px;}
+    .logo{font-size:14px;}
+    .logo img{width:28px !important; height:28px !important;}
+    /* попасть пальцем */
+    .sh{padding:14px 18px;}
+    footer a{display:inline-block; padding:6px 0;}
+  }
+  @media (max-width:430px){
+    .nav .btn{display:none;}                 /* совсем узкие экраны: оставляем телефон */
+    .nav .phone{display:inline-block !important; font-size:14px;}
+  }
+
+  @media (max-width:480px){ h1{font-size:29px;} }
+  #aMore a{display:block; padding:10px 0;}
+
 </style>
 <script src="articles.js"></script>
 </head>

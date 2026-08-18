@@ -392,6 +392,49 @@
     footer{padding:0 12px 20px;}
     .foot-g{grid-template-columns:1fr;}
   }
+
+  /* ——— мобильная оптимизация ——— */
+  @media (max-width:640px){
+    /* дышим ровнее: было до 190px пустоты между блоками */
+    .sec{padding:56px 0;}
+    .sec-h{margin-bottom:24px;}
+    .lane{margin-bottom:32px;}
+    /* выбор объекта в две колонки: экономит около 1000px прокрутки */
+    .objs{grid-template-columns:1fr 1fr; gap:10px;}
+    .obj img{aspect-ratio:1/1;}
+    .obj .lab{padding:30px 10px 10px; font-size:13px;}
+    /* карусели свайпом: стрелки пальцем всё равно не нажать */
+    .rail-nav, .rail-arrows{display:none !important;}
+    .rev{flex:0 0 min(88vw,352px);}
+    .broker{flex:0 0 min(74vw,264px);}
+    .rail{scroll-padding-left:24px;}
+    /* карта: ниже, кнопка под ней в потоке, а не поверх пустоты */
+    .map-frame{height:240px;}
+    .map-write{position:static !important; width:100%; margin-top:12px;}
+    /* попасть пальцем */
+    footer a{display:inline-block; padding:6px 0;}
+    .quiz-agree{font-size:13px; color:var(--ink2);}
+    .rev p{font-size:15px;}
+    /* нижняя панель: заявка всегда под рукой, не надо листать семь экранов */
+    body{padding-bottom:72px;}
+    .mbar{display:flex !important;}
+  }
+  @media (max-width:400px){
+    .sec-h h2{font-size:24px;}
+  }
+  /* липкая панель действия — только на телефоне */
+  .mbar{display:none; position:fixed; left:0; right:0; bottom:0; z-index:60;
+    gap:10px; padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+    background:rgba(247,244,239,.94); backdrop-filter:blur(12px); border-top:1px solid var(--line);}
+  .mbar .btn{flex:1 1 auto; min-height:48px; justify-content:center;}
+  .mbar .mbar-tel{display:flex; align-items:center; justify-content:center; width:48px; height:48px;
+    flex:0 0 48px; border:1px solid var(--line); border-radius:50%; background:#fff;}
+  .mbar .mbar-tel svg{width:20px; height:20px; fill:var(--ink);}
+
+
+  .drawer-x{position:sticky; top:0; margin-left:auto; display:flex; align-items:center; justify-content:center;
+    width:44px; height:44px; border:1px solid var(--line); border-radius:50%; background:#fff;
+    font-size:24px; line-height:1; color:var(--ink); cursor:pointer;}
 </style>
 </head>
 <body>
@@ -422,7 +465,7 @@
 
 <!-- MOBILE DRAWER -->
 <div class="drawer" id="drawer" onclick="if(event.target===this)this.classList.remove('open')">
-  <div class="drawer-in">
+  <div class="drawer-in"><button class="drawer-x" onclick="document.getElementById('drawer').classList.remove('open')" aria-label="Закрыть">×</button>
     <a href="#services" onclick="drawer.classList.remove('open')">Сервисы</a>
     <a href="#brokers" onclick="drawer.classList.remove('open')">Брокеры</a>
     <a href="#reviews" onclick="drawer.classList.remove('open')">Отзывы</a>
@@ -624,8 +667,8 @@
         </div>
         <!-- Фото сотрудника — заглушка до получения фото от владельца (ТЗ п.10) -->
         <div class="help-photo">
-          <img src="img/brokers/evgeniy-kozin.jpg" style="object-position:50% 22%;" alt="Евгений Козин — брокер по недвижимости">
-          <div class="help-name"><b>Евгений Козин</b><span>брокер по недвижимости · Home Sharing</span></div>
+          <img src="img/brokers/evgeniy-kozin.jpg" style="object-position:50% 22%;" alt="Эксперт по недвижимости">
+          <div class="help-name"><b>Эксперт по недвижимости</b><span>Home Sharing</span></div>
         </div>
       </div>
     </div>
@@ -829,7 +872,7 @@ function openModal(kind, ctx){
       <div class="m-note">Обычно перезваниваем в течение 7 минут</div>
       <label class="agree"><input type="checkbox" required checked> Согласие на обработку персональных данных
       (<a href="politika.html">политика</a>)</label></form></div>`+
-      phoneSide('<img src="img/brokers/ekaterina-kondratenko.jpg" style="object-position:49% 6%;" alt="Екатерина Кондратенко">','Екатерина Кондратенко')+
+      phoneSide('<img src="img/brokers/ekaterina-kondratenko.jpg" style="object-position:49% 6%;" alt="Эксперт по недвижимости">','Эксперт по недвижимости')+
       `</div>`;
   } else if(kind==='lead'){
     mbody.innerHTML=`<div class="m-grid"><div class="m-form">
@@ -871,5 +914,9 @@ function demoSubmit(e){
   return false;
 }
 </script>
+<div class="mbar">
+  <a class="mbar-tel" href="tel:+79951215940" aria-label="Позвонить"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></a>
+  <button class="btn btn-em" onclick="openModal('lead','Заявка с мобильной панели')">Оставить заявку</button>
+</div>
 </body>
 </html>
