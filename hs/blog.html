@@ -90,7 +90,7 @@
 <div class="wrap head">
   <div class="crumbs"><a href="index.html">Главная</a> / Блог</div>
   <h1>Блог Home Sharing</h1>
-  <p>Новости рынка, законы, инструкции и просто интересное о недвижимости.</p>
+  <p>Разбираем сделки, законы и практику — без воды и юридического жаргона.</p>
   <div class="tabs" id="tabs"></div>
 </div>
 
@@ -114,24 +114,26 @@ const TITLES={
  'Инструкции':['Какие документы нужны для продажи квартиры: полный чек-лист','Как проверить юридическую чистоту квартиры перед покупкой','Сдаёте квартиру впервые? Пошаговая инструкция','Где и как получить выписку из ЕГРН: все способы','Как подготовить квартиру к показу: чек-лист на выходные','Ипотека шаг за шагом: от заявки до сделки','Как безопасно принять и передать квартиру: акты и описи','Перепланировка: что можно, что нельзя и как узаконить'],
  'Интересное':['5 ошибок продавцов, из-за которых квартира «висит» месяцами','Хоумстейджинг: как подготовить квартиру к показу за выходные','Квартира или загородный дом: что выбирают семьи в 2026','Самые необычные планировки Москвы: что с ними делать','Как живут районы у Бауманской: гид по локации','Инвестиции в машиноместа: считаем доходность честно','Почему «бабушкин ремонт» продаётся дольше: психология покупателя','Микрорайоны будущего: что строят рядом с центром']};
 const DATES=['12 авг 2026','8 авг 2026','1 авг 2026','25 июл 2026','18 июл 2026','9 июл 2026','30 июн 2026','21 июн 2026'];
+const MON={'янв':0,'фев':1,'мар':2,'апр':3,'мая':4,'июн':5,'июл':6,'авг':7,'сен':8,'окт':9,'ноя':10,'дек':11};
+const pd=s=>{const m=String(s).split(' ');return new Date(+m[2],MON[m[1]]||0,+m[0]);};
 let _id=0; Object.entries(TITLES).forEach(([r,list])=>list.forEach((t,i)=>{_id++; DB.push({id:_id,r,t,d:DATES[i%DATES.length],c:COVERS[r][i%COVERS[r].length]});}));
 
-const PAGE=6;
+DB.sort((a,b)=>pd(b.d)-pd(a.d));
+const PAGE=9;
 let rub='Все', page=1;
 const params=new URLSearchParams(location.search);
 if(params.get('r') && TITLES[params.get('r')]) rub=params.get('r');
 
 const tabs=document.getElementById('tabs'), grid=document.getElementById('grid'), pager=document.getElementById('pager');
 function render(){
-  const rubs=['Все',...Object.keys(TITLES)];
-  tabs.innerHTML=rubs.map(r=>`<button class="tab ${r===rub?'on':''}" onclick="setRub('${r}')">${r}</button>`).join('');
-  const items=DB.filter(x=>rub==='Все'||x.r===rub);
+  tabs.innerHTML='';
+  const items=DB.slice();
   const pages=Math.max(1,Math.ceil(items.length/PAGE));
   if(page>pages)page=pages;
   const slice=items.slice((page-1)*PAGE, page*PAGE);
   grid.innerHTML=slice.map(x=>`<a class="post" href="article.html?id=${x.id}">
     <img src="img/${x.c}" alt="" loading="lazy">
-    <div class="pb"><span class="tag">${x.r}</span><h3>${x.t}</h3>
+    <div class="pb"><h3>${x.t}</h3>
     <div class="meta">${x.d} · Home Sharing</div></div></a>`).join('');
   let ph=`<button class="pg" ${page===1?'disabled':''} onclick="setPage(${page-1})">←</button>`;
   for(let i=1;i<=pages;i++) ph+=`<button class="pg ${i===page?'on':''}" onclick="setPage(${i})">${i}</button>`;

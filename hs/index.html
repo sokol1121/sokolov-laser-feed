@@ -644,9 +644,9 @@
       <div class="map-addr"><span class="k">Адрес</span><span class="v">Москва, Спартаковский пер., д. 2, стр. 1</span></div>
       <div class="map-g">
         <div class="map-box">
-          <!-- На боевом домене можно заменить на виджет Яндекс.Карт (map-widget) -->
-          <iframe class="map-frame" title="Карта офиса" height="520"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=37.6725%2C55.7725%2C37.6865%2C55.7795&amp;layer=mapnik&amp;marker=55.776%2C37.6795"></iframe>
+          <iframe class="map-frame" title="Офис Home Sharing на Яндекс.Картах" height="520"
+            src="https://yandex.ru/map-widget/v1/?mode=search&amp;text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A1%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%80%D0%B5%D1%83%D0%BB%D0%BE%D0%BA%2C%202%D1%811&amp;z=16"
+            allowfullscreen="true" loading="lazy" frameborder="0"></iframe>
           <button class="btn btn-em map-write" onclick="openModal('write')">Написать нам</button>
         </div>
         <div class="map-card">
@@ -781,16 +781,26 @@ const RUBRICS=[
    ['Квартира или загородный дом: что выбирают семьи в 2026','27 июл 2026']]]];
 const lanes=document.getElementById('lanes');
 const BASE={'Новости':0,'Законы':8,'Инструкции':16,'Интересное':24};
-lanes.innerHTML=RUBRICS.map(([r,imgs,posts])=>`
+
+/* Одна лента вместо четырёх: на главной показываем три свежие статьи,
+   всё остальное — по кнопке «Все статьи». Четыре рубрики подряд на телефоне
+   превращались в бесконечную простыню. */
+const MON={'янв':0,'фев':1,'мар':2,'апр':3,'мая':4,'май':4,'июн':5,'июл':6,'авг':7,'сен':8,'окт':9,'ноя':10,'дек':11};
+function pdate(s){const m=String(s).split(' ');return new Date(+m[2], MON[m[1]]!==undefined?MON[m[1]]:0, +m[0]);}
+const FLAT=[];
+RUBRICS.forEach(([r,imgs,posts])=>posts.forEach((p,pi)=>FLAT.push({
+  r:r, img:imgs[pi%imgs.length], t:p[0], d:p[1], id:BASE[r]+pi+1})));
+FLAT.sort((a,b)=>pdate(b.d)-pdate(a.d));
+lanes.innerHTML=`
   <div class="lane rv">
-    <div class="lane-h"><h3>${r}</h3><a class="all" href="blog.html?r=${encodeURIComponent(r)}">Все статьи →</a></div>
+    <div class="lane-h"><h3>Статьи</h3><a class="all" href="blog.html">Все статьи →</a></div>
     <div class="lane-g">
-      ${posts.map((p,pi)=>`<a class="post" href="article.html?id=${BASE[r]+pi+1}">
-        <img src="img/${imgs[pi%imgs.length]}" alt="" loading="lazy">
-        <div class="pb"><span class="tag">${r}</span><h4>${p[0]}</h4>
-        <div class="meta">${p[1]} · Home Sharing</div></div></a>`).join('')}
+      ${FLAT.slice(0,3).map(a=>`<a class="post" href="article.html?id=${a.id}">
+        <img src="img/${a.img}" alt="" loading="lazy">
+        <div class="pb"><h4>${a.t}</h4>
+        <div class="meta">${a.d} · Home Sharing</div></div></a>`).join('')}
     </div>
-  </div>`).join('');
+  </div>`;
 document.querySelectorAll('#lanes .rv').forEach(el=>io.observe(el));
 
 /* ---------- modals ---------- */
