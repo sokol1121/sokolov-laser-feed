@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Блог — Home Sharing</title>
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700;800&family=Onest:wght@400;500;600;700&family=Unbounded:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--paper:#F7F4EF; --card:#EFECE7; --card-h:#EAE5DC; --dark:#292826; --deep:#161513;
+    --ink:#1F1E1C; --ink2:#4C463D; --mut:#6F6A61; --mut2:#8A8781; --line:#DDD9D2;
+    --em:#D08030; --em-d:#B4661C; --em-t:#9C5610; --em-w:#F1E7D8; --gold:#D08030;
+    --t-on-d:#F1EEE9; --m-on-d:#A9A6A0;}
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{overflow-x:clip;}
+  body{font-family:"Onest",system-ui,sans-serif; background:var(--paper); color:var(--ink);
+    line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:clip;}
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  .wrap{max-width:1220px; margin:0 auto; padding:0 28px;}
+  h1,h2{font-family:"Inter Tight",sans-serif; font-weight:800; text-transform:uppercase;
+    letter-spacing:-.02em; line-height:1.08;}
+  header{position:sticky; top:0; z-index:50; background:rgba(247,244,239,.9); backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);}
+  .nav{display:flex; align-items:center; gap:20px; height:80px;}
+  .logo{font-family:"Unbounded",sans-serif; font-weight:700; font-size:16px; letter-spacing:.02em;
+    display:inline-flex; align-items:center;}
+  .logo span{color:var(--em);}
+  .nav .spacer{flex:1;}
+  .phone{font-weight:700; font-size:15px; font-family:"Inter Tight",sans-serif;}
+  .btn{display:inline-flex; align-items:center; justify-content:center; gap:12px; border:none; cursor:pointer;
+    font-family:"Onest",sans-serif; font-weight:600; font-size:14px; border-radius:999px;
+    padding:6px 6px 6px 20px; min-height:46px; transition:.18s; white-space:nowrap;}
+  .btn::after{content:"→"; display:inline-flex; align-items:center; justify-content:center;
+    width:32px; height:32px; border-radius:50%; font-size:14px; flex:0 0 32px; transition:transform .18s ease;}
+  .btn:hover::after{transform:translateX(4px);}
+  .btn-em{background:var(--em); color:var(--deep);}
+  .btn-em::after{background:var(--deep); color:var(--em);}
+  .btn-em:hover{background:#DE9040;}
+  .head{padding:64px 0 30px;}
+  .head h1{font-size:clamp(28px,3.6vw,46px); margin-bottom:12px;}
+  .head p{color:var(--mut); max-width:560px;}
+  .crumbs{font-size:13px; color:var(--mut2); margin-bottom:20px;}
+  .crumbs a{color:var(--em-t);}
+  .tabs{display:flex; gap:8px; flex-wrap:wrap; margin:28px 0 38px;}
+  .tab{font-size:14px; font-weight:600; padding:11px 20px; border-radius:999px; cursor:pointer;
+    border:1px solid var(--line); background:transparent; color:var(--ink2); transition:.14s;
+    font-family:"Onest",sans-serif;}
+  .tab:hover{border-color:var(--ink);}
+  .tab.on{background:var(--dark); border-color:var(--dark); color:var(--t-on-d);}
+  .grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
+  .post{background:var(--card); border:none; border-radius:20px; overflow:hidden; transition:.16s;
+    display:flex; flex-direction:column;}
+  .post:hover{background:var(--card-h); transform:translateY(-3px);}
+  .post img{aspect-ratio:16/9; object-fit:cover; width:100%;}
+  .post .pb{padding:20px 22px; display:flex; flex-direction:column; gap:9px; flex:1;}
+  .post .tag{font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--em-t);}
+  .post h3{font-family:"Onest",sans-serif; font-weight:600; font-size:15.5px; line-height:1.45;
+    text-transform:none; letter-spacing:0; color:var(--ink);}
+  .post .meta{font-size:12.5px; color:var(--mut); margin-top:auto;}
+  .pager{display:flex; gap:8px; justify-content:center; margin:48px 0 96px;}
+  .pg{min-width:44px; height:44px; border-radius:999px; border:1px solid var(--line); background:transparent;
+    font-family:"Inter Tight",sans-serif; font-weight:600; font-size:14px; cursor:pointer; color:var(--ink2);
+    transition:.13s; padding:0 12px;}
+  .pg:hover{border-color:var(--ink); color:var(--ink);}
+  .pg.on{background:var(--dark); border-color:var(--dark); color:var(--t-on-d);}
+  .pg:disabled{opacity:.35; cursor:default;}
+  footer{background:transparent; padding:0 20px 24px; font-size:13px;}
+  footer .wrap{background:#1C352C; border-radius:24px; max-width:1220px; color:#B4C4B8;
+    padding:26px 36px; display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  footer a{color:#B4C4B8;} footer a:hover{color:#fff;}
+  @media (max-width:960px){ .grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:620px){ .grid{grid-template-columns:1fr;} .phone{display:none;}
+    .nav{height:70px; gap:12px;} footer{padding:0 12px 18px;} }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html"><img src="img/logo.png" alt="" style="width:34px;height:34px;margin-right:8px;">HOME&nbsp;SHARING</a>
+    <div class="spacer"></div>
+    <a class="phone" href="tel:+79951215940">+7 (995) 121-59-40</a>
+    <a class="btn btn-em" href="index.html#services">Получить консультацию</a>
+  </div>
+</header>
+
+<div class="wrap head">
+  <div class="crumbs"><a href="index.html">Главная</a> / Блог</div>
+  <h1>Блог Home Sharing</h1>
+  <p>Новости рынка, законы, инструкции и просто интересное о недвижимости.</p>
+  <div class="tabs" id="tabs"></div>
+</div>
+
+<div class="wrap"><div class="grid" id="grid"></div>
+<div class="pager" id="pager"></div></div>
+
+<footer>
+  <div class="wrap">
+    <span>© Home Sharing, 2026. Все права защищены.</span>
+    <a href="politika.html">Обработка персональных данных</a>
+  </div>
+</footer>
+
+<script>
+/* демо-каталог статей: рубрика, заголовок, дата, обложка */
+const COVERS={'Новости':['blognews.jpg','news2.jpg','news3.jpg'],'Законы':['blogzakon.jpg','zakon2.jpg','zakon3.jpg'],'Инструкции':['bloginstr.jpg','instr2.jpg','instr3.jpg'],'Интересное':['blogint.jpg','int2.jpg','int3.jpg']};
+const DB=[];
+const TITLES={
+ 'Новости':['Спрос на аренду в Москве: что происходит этой осенью','Новые ЖК у метро Бауманская: обзор стартов продаж','Ставки по ипотеке снова изменились: что это значит для покупателя','Вторичка против новостроек: динамика цен за квартал','Каких квартир не хватает рынку аренды прямо сейчас','Как изменился портрет покупателя за год','Загородный рынок Подмосковья: главные тренды сезона','Что будет с ценами на жильё до конца года: мнения экспертов'],
+ 'Законы':['Изменения в правилах регистрации граждан: главное для собственника','Налог с продажи квартиры в 2026 году: когда можно не платить','Как правильно оформить задаток, чтобы не потерять деньги','Новые требования к договорам аренды: что проверить','Права и обязанности арендатора: разбор типовых споров','Дарение или купля-продажа: что выгоднее для родственников','Как выделить доли детям при использовании маткапитала','Самозанятый сдаёт квартиру: как платить налоги правильно'],
+ 'Инструкции':['Какие документы нужны для продажи квартиры: полный чек-лист','Как проверить юридическую чистоту квартиры перед покупкой','Сдаёте квартиру впервые? Пошаговая инструкция','Где и как получить выписку из ЕГРН: все способы','Как подготовить квартиру к показу: чек-лист на выходные','Ипотека шаг за шагом: от заявки до сделки','Как безопасно принять и передать квартиру: акты и описи','Перепланировка: что можно, что нельзя и как узаконить'],
+ 'Интересное':['5 ошибок продавцов, из-за которых квартира «висит» месяцами','Хоумстейджинг: как подготовить квартиру к показу за выходные','Квартира или загородный дом: что выбирают семьи в 2026','Самые необычные планировки Москвы: что с ними делать','Как живут районы у Бауманской: гид по локации','Инвестиции в машиноместа: считаем доходность честно','Почему «бабушкин ремонт» продаётся дольше: психология покупателя','Микрорайоны будущего: что строят рядом с центром']};
+const DATES=['12 авг 2026','8 авг 2026','1 авг 2026','25 июл 2026','18 июл 2026','9 июл 2026','30 июн 2026','21 июн 2026'];
+let _id=0; Object.entries(TITLES).forEach(([r,list])=>list.forEach((t,i)=>{_id++; DB.push({id:_id,r,t,d:DATES[i%DATES.length],c:COVERS[r][i%COVERS[r].length]});}));
+
+const PAGE=6;
+let rub='Все', page=1;
+const params=new URLSearchParams(location.search);
+if(params.get('r') && TITLES[params.get('r')]) rub=params.get('r');
+
+const tabs=document.getElementById('tabs'), grid=document.getElementById('grid'), pager=document.getElementById('pager');
+function render(){
+  const rubs=['Все',...Object.keys(TITLES)];
+  tabs.innerHTML=rubs.map(r=>`<button class="tab ${r===rub?'on':''}" onclick="setRub('${r}')">${r}</button>`).join('');
+  const items=DB.filter(x=>rub==='Все'||x.r===rub);
+  const pages=Math.max(1,Math.ceil(items.length/PAGE));
+  if(page>pages)page=pages;
+  const slice=items.slice((page-1)*PAGE, page*PAGE);
+  grid.innerHTML=slice.map(x=>`<a class="post" href="article.html?id=${x.id}">
+    <img src="img/${x.c}" alt="" loading="lazy">
+    <div class="pb"><span class="tag">${x.r}</span><h3>${x.t}</h3>
+    <div class="meta">${x.d} · Home Sharing</div></div></a>`).join('');
+  let ph=`<button class="pg" ${page===1?'disabled':''} onclick="setPage(${page-1})">←</button>`;
+  for(let i=1;i<=pages;i++) ph+=`<button class="pg ${i===page?'on':''}" onclick="setPage(${i})">${i}</button>`;
+  ph+=`<button class="pg" ${page===pages?'disabled':''} onclick="setPage(${page+1})">→</button>`;
+  pager.innerHTML=ph;
+}
+function setRub(r){ rub=r; page=1; render(); window.scrollTo({top:0,behavior:'smooth'}); }
+function setPage(p){ page=p; render(); window.scrollTo({top:0,behavior:'smooth'}); }
+render();
+</script>
+</body>
+</html>

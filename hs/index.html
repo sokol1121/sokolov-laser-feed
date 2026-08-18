@@ -1,0 +1,865 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home Sharing — агентство недвижимости в Москве</title>
+<meta name="description" content="Продажа, покупка и аренда недвижимости в Москве. Аренда без комиссии, продажа без стресса. Юридическое сопровождение каждой сделки.">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700;800&family=Onest:wght@400;500;600;700&family=Unbounded:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* база MODO: крем/графит · акцент — фирменный янтарь логотипа #D08030 (в роли лаймового из гайда) */
+    --paper:#F7F4EF; --card:#EFECE7; --card-h:#EAE5DC; --dark:#292826; --deep:#161513;
+    --ink:#1F1E1C; --ink2:#4C463D; --mut:#6F6A61; --mut2:#8A8781;
+    --line:#DDD9D2; --line-d:rgba(255,255,255,.22);
+    --em:#D08030; --em-d:#B4661C; --em-t:#9C5610; --em-w:#F1E7D8; --gold:#D08030;
+    --t-on-d:#F1EEE9; --m-on-d:#A9A6A0;
+    --pine:#1C352C; --pine-t:#EFF3EC; --pine-m:#B4C4B8;
+    --r:20px; --r-blk:28px; --shadow:0 8px 24px rgba(20,18,16,.06); --shadow-s:0 8px 24px rgba(20,18,16,.06);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth; overflow-x:clip;}
+  body{font-family:"Onest",system-ui,sans-serif; background:var(--paper); color:var(--ink);
+    line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:clip;}
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  .wrap{max-width:1220px; margin:0 auto; padding:0 28px;}
+  h1,h2,h3{font-family:"Inter Tight",sans-serif; font-weight:800; letter-spacing:-.01em;}
+  h1,h2{text-transform:uppercase; letter-spacing:-.02em; line-height:1.06;}
+  .eyebrow{font-size:12px; font-weight:600; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--mut2); margin-bottom:14px;}
+  .sec{padding:clamp(96px,10vw,136px) 0;}
+  .sec-h{display:flex; justify-content:space-between; align-items:flex-end; gap:36px; margin-bottom:52px;}
+  .sec-h h2{font-size:clamp(27px,3.2vw,42px); max-width:620px;}
+  .sec-h .side{color:var(--mut); max-width:330px; font-size:15px; padding-bottom:6px;}
+
+  /* reveal animation */
+  .rv{opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease;}
+  .rv.in{opacity:1; transform:none;}
+  @media (prefers-reduced-motion:reduce){ .rv{opacity:1; transform:none; transition:none;} html{scroll-behavior:auto;} }
+
+  /* header */
+  header{position:sticky; top:0; z-index:50; background:rgba(247,244,239,.9); backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);}
+  .nav{display:flex; align-items:center; gap:16px; height:82px;}
+  .logo{font-family:"Unbounded",sans-serif; font-weight:700; font-size:16px; letter-spacing:.02em;
+    display:inline-flex; align-items:center; gap:10px;}
+  .logo img{width:38px; height:38px;}
+  .logo span{color:var(--em);}
+  .menu{display:flex; gap:2px; font-size:13.5px; font-weight:600; color:var(--ink2);
+    border:1px solid var(--line); border-radius:999px; padding:4px; margin-left:8px; flex-shrink:0;}
+  .menu a{padding:8px 13px; border-radius:999px; transition:.15s;}
+  .menu a:hover{background:var(--card); color:var(--ink);}
+  .nav .spacer{flex:1;}
+  .msgs{display:flex; gap:8px;}
+  .msg-i{width:40px; height:40px; border-radius:50%; border:1px solid var(--line); display:flex;
+    align-items:center; justify-content:center; background:transparent; transition:.15s;}
+  .msg-i svg{width:17px; height:17px; fill:var(--ink);}
+  .msg-i:hover{border-color:var(--em); background:var(--em-w);}
+  .msg-i:hover svg{fill:var(--em-t);}
+  .phone{font-weight:700; font-size:15px; white-space:nowrap; font-family:"Inter Tight",sans-serif;}
+
+  /* кнопки-пилюли с фирменным кружком-стрелкой */
+  .btn{display:inline-flex; align-items:center; justify-content:center; gap:14px; border:none; cursor:pointer;
+    font-family:"Onest",sans-serif; font-weight:600; font-size:15px; border-radius:999px;
+    padding:8px 8px 8px 26px; min-height:54px; transition:.18s; white-space:nowrap;}
+  .btn::after{content:"→"; display:inline-flex; align-items:center; justify-content:center;
+    width:36px; height:36px; border-radius:50%; font-size:16px; flex:0 0 36px; transition:transform .18s ease;}
+  .btn:hover::after{transform:translateX(4px);}
+  .btn-em{background:var(--em); color:var(--deep);}
+  .btn-em::after{background:var(--deep); color:var(--em);}
+  .btn-em:hover{background:#DE9040;}
+  .btn-em:disabled{background:#E6DFD2; color:#A29B8E; cursor:not-allowed;}
+  .btn-em:disabled::after{background:#CFC8BA; color:#F7F4EF; transform:none;}
+  .btn-ghost{background:transparent; color:var(--ink); border:1px solid var(--ink); padding:7px 7px 7px 25px;}
+  .btn-ghost::after{background:var(--ink); color:var(--paper);}
+  .btn-ghost:hover{border-color:var(--em-d); color:var(--em-d);}
+  .btn-ghost:hover::after{background:var(--em); color:var(--deep);}
+  .btn-sm{min-height:46px; padding:6px 6px 6px 20px; font-size:14px;}
+  .btn-sm::after{width:32px; height:32px; flex-basis:32px; font-size:14px;}
+  .burger{display:none; width:44px; height:44px; border:1px solid var(--line); border-radius:50%;
+    background:transparent; cursor:pointer; flex-direction:column; align-items:center; justify-content:center; gap:5px;}
+  .burger i{display:block; width:18px; height:2px; background:var(--ink); border-radius:2px;}
+
+  .drawer{position:fixed; inset:0; z-index:90; background:rgba(22,21,19,.55); display:none;}
+  .drawer.open{display:block;}
+  .drawer-in{position:absolute; top:0; right:0; bottom:0; width:min(320px,86vw); background:var(--paper);
+    padding:26px; display:flex; flex-direction:column; gap:6px; animation:slidein .25s ease;}
+  @keyframes slidein{from{transform:translateX(30px); opacity:0;} to{transform:none; opacity:1;}}
+  .drawer-in a{padding:13px 8px; font-weight:600; font-size:16px; border-bottom:1px solid var(--line);}
+  .drawer-in .btn{margin-top:16px;}
+
+  /* hero: гигантское дисплей-слово за фото (приём MODO) */
+  .hero{position:relative; padding:20px 0 clamp(88px,9vw,124px); overflow:hidden;}
+  .hero-word{position:absolute; left:50%; top:clamp(6px,1.5vw,22px); transform:translateX(-50%); z-index:0;
+    font-family:"Unbounded","Inter Tight",sans-serif; font-weight:800;
+    font-size:clamp(52px,13.8vw,196px); line-height:1; letter-spacing:-.01em;
+    color:#EBE4D6; white-space:nowrap; pointer-events:none; user-select:none;}
+  .hero-word span{color:inherit;}
+  .hero-g{position:relative; z-index:1; display:grid; grid-template-columns:1.02fr .98fr; gap:56px;
+    align-items:start; padding-top:clamp(96px,13.5vw,196px);}
+  .hero h1{font-size:clamp(34px,4.6vw,62px);}
+  .hero h1 em{font-style:normal; color:var(--em-d); white-space:nowrap;}
+  .hero .sub{margin:26px 0 34px; font-size:17px; color:var(--ink2); max-width:47ch;}
+  .hero-cta{display:flex; gap:14px; flex-wrap:wrap;}
+  .hero-chips{display:flex; gap:10px; flex-wrap:wrap; margin-top:36px;}
+  .chip{display:inline-flex; align-items:center; gap:10px; font-size:13.5px; font-weight:500; color:var(--ink2);
+    border:1px solid var(--line); background:transparent; border-radius:999px; padding:10px 18px 10px 12px;}
+  .chip::before{content:"✓"; display:inline-flex; width:20px; height:20px; border-radius:50%;
+    border:1px solid var(--em); color:var(--em-d); font-size:11px; font-weight:700;
+    align-items:center; justify-content:center;}
+  .hero-img{position:relative; margin-top:calc(-1*clamp(40px,5.5vw,80px));}
+  .hero-img img{border-radius:24px; aspect-ratio:16/13.5; object-fit:cover; width:100%;}
+  .hero-note{display:inline-flex; gap:10px; align-items:center; margin-top:22px; max-width:100%;
+    background:var(--dark); border-radius:999px; padding:12px 22px;
+    font-size:13px; font-weight:500; color:#F1EEE9;}
+  .hero-note .dot{width:8px; height:8px; border-radius:50%; background:var(--em); flex:0 0 8px;}
+
+  /* quiz — светлый «остров» */
+  .quiz{background:var(--card); border:none; border-radius:var(--r-blk); padding:clamp(26px,4vw,52px); box-shadow:none;}
+  .q-steps{display:flex; align-items:center; gap:14px; margin-bottom:34px;}
+  .q-step{display:flex; align-items:center; gap:10px; font-size:13px; font-weight:600; color:var(--mut);}
+  .q-step .n{width:30px; height:30px; border-radius:50%; background:transparent; border:1px solid #C9C2B4;
+    display:flex; align-items:center; justify-content:center; font-size:13px; font-family:"Inter Tight",sans-serif;}
+  .q-step.on{color:var(--ink);}
+  .q-step.on .n{background:var(--em); border-color:var(--em); color:var(--deep); font-weight:700;}
+  .q-line{flex:1; height:1px; background:#D3CCBE; border-radius:2px; overflow:hidden;}
+  .q-line i{display:block; height:100%; width:0; background:var(--em-d); transition:width .4s;}
+  .seg{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:36px;}
+  .seg button{flex:1; min-width:160px; font-family:"Inter Tight",sans-serif; font-weight:700; font-size:18px;
+    text-transform:uppercase; letter-spacing:-.01em;
+    padding:24px 12px; border-radius:var(--r); border:1px solid transparent; background:var(--paper);
+    cursor:pointer; color:var(--ink); transition:.16s;}
+  .seg button small{display:block; font-family:"Onest",sans-serif; font-weight:500; font-size:12.5px;
+    text-transform:none; letter-spacing:0; color:var(--mut); margin-top:7px;}
+  .seg button:hover{border-color:var(--em); transform:translateY(-2px);}
+  .seg button.on{background:var(--dark); border-color:var(--dark); color:var(--t-on-d);}
+  .seg button.on small{color:var(--m-on-d);}
+  .objs{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; position:relative;}
+  .obj{position:relative; border-radius:var(--r); overflow:hidden; cursor:pointer; border:2px solid transparent;
+    transition:.16s; background:var(--deep);}
+  .obj img{aspect-ratio:4/3; object-fit:cover; transition:.45s; opacity:.97; width:100%;}
+  .obj:hover img{transform:scale(1.05);}
+  .obj:hover{border-color:#D0803088;}
+  .obj.on{border-color:var(--em);}
+  .obj .lab{position:absolute; left:0; right:0; bottom:0; padding:46px 16px 15px; color:#fff;
+    font-weight:600; font-size:16px; text-shadow:0 1px 8px rgba(0,0,0,.55);
+    background:linear-gradient(180deg, transparent 12%, rgba(24,20,15,.55) 48%, rgba(24,20,15,.96));}
+  .obj .tick{position:absolute; top:12px; right:12px; width:30px; height:30px; border-radius:50%;
+    background:#fff; color:transparent; display:flex; align-items:center; justify-content:center;
+    font-weight:800; font-size:15px; box-shadow:0 2px 10px rgba(0,0,0,.28); transition:color .15s;}
+  .obj:hover .tick{color:#D8D1C3;}
+  .obj.on .tick{color:var(--em-t);}
+  .q-foot{display:flex; align-items:center; justify-content:space-between; gap:18px; margin-top:32px; flex-wrap:wrap;}
+  .q-sel{font-size:14.5px; color:var(--mut);}
+  .q-sel b{color:var(--em-t);}
+  .quiz-agree{font-size:12px; color:var(--mut); margin-top:14px;}
+  .quiz-agree a{color:var(--mut); text-decoration:underline;}
+  .lock{pointer-events:none;}
+  .lock .obj img{filter:grayscale(.5) brightness(.85);}
+  .lock .obj{border-color:transparent;}
+
+  /* brokers */
+  .rail-wrap{position:relative;}
+  .rail{display:flex; gap:16px; overflow-x:auto; scroll-snap-type:x mandatory; padding:6px 6px 10px;
+    scrollbar-width:none;}
+  .rail::-webkit-scrollbar{display:none;}
+  .broker{flex:0 0 264px; scroll-snap-align:start; background:var(--card); border:none;
+    border-radius:22px; padding:14px 14px 46px; text-align:left; transition:.16s; position:relative;}
+  .broker:hover{transform:translateY(-4px); background:var(--card-h);}
+  .bph{border-radius:16px; overflow:hidden; margin-bottom:14px; aspect-ratio:1/1.08; background:#DDD5C6;}
+  .bph img{width:100%; height:100%; object-fit:cover;}
+  .broker b{display:block; font-size:16.5px; line-height:1.25; padding:0 8px;}
+  .broker .role{display:block; font-size:13px; color:var(--mut); padding:0 8px; margin-top:3px;}
+  .bio{max-height:0; overflow:hidden; transition:max-height .35s ease; padding:0 8px;}
+  .broker.open .bio{max-height:520px;}
+  .bio ul{margin:12px 0 0 15px; font-size:13px; line-height:1.5; color:var(--ink2);}
+  .bio li{margin-bottom:7px;}
+  .bp-more{position:absolute; right:16px; bottom:11px; background:none; border:none; cursor:pointer;
+    font-family:"Onest",sans-serif; font-size:13px; font-weight:600; color:var(--em-t); padding:6px 0;}
+  .bp-more:hover{color:var(--em-d); text-decoration:underline;}
+  .arrows{display:flex; gap:10px; flex-shrink:0;}
+  .arr-btn{width:48px; height:48px; border-radius:50%; border:1px solid var(--ink); background:transparent;
+    cursor:pointer; font-size:17px; color:var(--ink); transition:.15s;}
+  .arr-btn:hover{background:var(--dark); border-color:var(--dark); color:var(--t-on-d);}
+
+  /* reviews — тёмная карусель в фирменных цветах */
+  .rev-rail{display:flex; gap:18px; overflow-x:auto; scroll-snap-type:x mandatory; padding:6px 6px 10px;
+    scrollbar-width:none;}
+  .rev-rail::-webkit-scrollbar{display:none;}
+  .rev{flex:0 0 352px; scroll-snap-align:start; background:var(--dark); color:var(--t-on-d);
+    border-radius:20px; padding:24px 24px 22px; display:flex; flex-direction:column; gap:12px;}
+  .rev-top{display:flex; align-items:center; gap:12px;}
+  .rev-top .avc{width:44px; height:44px; flex:0 0 44px; border-radius:50%; background:rgba(208,128,48,.22);
+    color:var(--em); font-family:"Inter Tight",sans-serif; font-weight:800; font-size:16px;
+    display:flex; align-items:center; justify-content:center;}
+  .rev-top .who b{display:block; font-size:14.5px; line-height:1.3;}
+  .rev-top .who span{display:block; font-size:12px; color:var(--m-on-d); margin-top:1px;}
+  .rev-meta{display:flex; align-items:center; gap:10px; font-size:12.5px; color:var(--m-on-d);}
+  .stars{color:var(--em); letter-spacing:2px; font-size:13.5px;}
+  .rev p{font-size:14px; color:#DED9CF; line-height:1.6;}
+
+  /* blog lanes */
+  .lane{margin-bottom:52px;}
+  .lane-h{display:flex; align-items:baseline; justify-content:space-between; gap:16px; margin-bottom:20px;}
+  .lane-h h3{font-size:17px; text-transform:uppercase; letter-spacing:.05em; font-weight:700;}
+  .lane-h .all{font-size:14px; font-weight:600; color:var(--em-d);}
+  .lane-h .all:hover{color:var(--ink);}
+  .lane-g{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
+  .post{background:var(--card); border:none; border-radius:var(--r); overflow:hidden; transition:.16s;
+    display:flex; flex-direction:column;}
+  .post:hover{background:var(--card-h); transform:translateY(-3px); box-shadow:none;}
+  .post img{aspect-ratio:16/9; object-fit:cover; width:100%;}
+  .post .pb{padding:20px 22px 18px; display:flex; flex-direction:column; gap:9px; flex:1;}
+  .post .tag{font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--em-t);}
+  .post h4{font-family:"Onest",sans-serif; font-weight:600; font-size:15.5px; line-height:1.45; color:var(--ink);}
+  .post .meta{font-size:12.5px; color:var(--mut); margin-top:auto;}
+
+  /* help banner — тёмный графитовый «остров» r=28, форма «врезана» в баннер (ТЗ п.10) */
+  .help{border-radius:var(--r-blk); overflow:hidden; position:relative; color:var(--t-on-d); background:var(--dark);}
+  .help::before{content:""; position:absolute; inset:0;
+    background:url('img/office.jpg') right center/cover; opacity:.1;}
+  .help-in{--hp:clamp(32px,5vw,64px); position:relative; padding:var(--hp);
+    display:grid; grid-template-columns:1.02fr .98fr; gap:clamp(28px,4vw,56px); align-items:center;}
+  .help .eyebrow{color:var(--em);}
+  .help h2{font-size:clamp(25px,3vw,38px); margin-bottom:16px;}
+  .help p{color:var(--m-on-d); font-size:15.5px; max-width:430px;}
+  .help-msgs{display:flex; gap:10px; margin-top:24px; align-items:center; font-size:13.5px; color:var(--m-on-d);
+    flex-wrap:wrap;}
+  .help-msgs .msg-i{background:transparent; border-color:var(--line-d);}
+  .help-msgs .msg-i svg{fill:#F1EEE9;}
+  .help-msgs .msg-i:hover{border-color:var(--em); background:rgba(208,128,48,.15);}
+  .help-form{margin-top:26px; max-width:430px;}
+  .help-photo{position:relative; align-self:stretch; min-height:460px;
+    margin:calc(var(--hp)*-1) calc(var(--hp)*-1) calc(var(--hp)*-1) 0;}
+  .help-photo img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 15%;}
+  .help-photo::after{content:""; position:absolute; inset:0;
+    background:linear-gradient(90deg, var(--dark) 0%, rgba(41,40,38,0) 34%);}
+  .help-name{position:absolute; left:22px; bottom:20px; z-index:2; background:rgba(20,18,15,.55);
+    backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,.16); border-radius:16px; padding:10px 18px;}
+  .help-name b{display:block; font-size:14.5px;}
+  .help-name span{font-size:12px; color:#D9D2C6;}
+  .fld{width:100%; border:1px solid var(--line); border-radius:999px; padding:14px 20px; font-size:15px;
+    font-family:"Onest",sans-serif; margin-bottom:12px; outline:none; background:#fff; transition:.14s; color:var(--ink);}
+  .fld:focus{border-color:var(--em);}
+  .help-form .fld{background:transparent; border-color:var(--line-d); color:#fff;}
+  .help-form .fld::placeholder{color:var(--m-on-d);}
+  .help-form .fld:focus{border-color:var(--em); background:rgba(255,255,255,.05);}
+  .agree{display:block; position:relative; padding-left:27px; font-size:12px; color:var(--mut); margin-top:12px;}
+  .agree input{position:absolute; left:0; top:3px; accent-color:var(--em-d);}
+  .agree a{color:var(--em-t); text-decoration:underline;}
+  .help-form .agree{color:var(--m-on-d);}
+  .help-form .agree a{color:var(--em);}
+
+  /* map — единая композиция в оранжевой рамке (ТЗ п.11) */
+  .map-shell{border:3px solid var(--em); border-radius:var(--r-blk); padding:clamp(14px,2vw,22px);
+    background:var(--paper);}
+  .map-addr{display:flex; justify-content:flex-end; align-items:baseline; gap:12px; padding:4px 8px 14px;
+    flex-wrap:wrap;}
+  .map-addr .k{font-size:11px; text-transform:uppercase; letter-spacing:.12em; color:var(--mut2);}
+  .map-addr .v{font-weight:700; font-size:16.5px; font-family:"Inter Tight",sans-serif;}
+  .map-g{display:grid; grid-template-columns:1.4fr .6fr; gap:16px; align-items:stretch;}
+  .map-box{position:relative;}
+  .map-frame{border:0; width:100%; height:520px; border-radius:20px; filter:saturate(.8); display:block;}
+  .map-write{position:absolute; right:16px; bottom:16px; z-index:2; box-shadow:0 12px 32px rgba(20,18,16,.3);}
+  .map-card{background:var(--card); border:none; border-radius:20px; padding:clamp(24px,2.6vw,36px); display:flex;
+    flex-direction:column; justify-content:center; gap:18px; box-shadow:none;}
+  .map-card .k{display:block; font-size:11px; text-transform:uppercase; letter-spacing:.12em; color:var(--mut2);
+    margin-bottom:4px;}
+  .map-card .v{font-weight:600; font-size:16px;}
+  .fine{font-size:11.5px; color:var(--mut2);}
+
+  /* footer — тёмно-зелёный «остров» r=28 (палитра баннера «Сдаём вашу квартиру», ТЗ п.12) */
+  footer{background:transparent; padding:0 20px 28px; margin-top:clamp(96px,10vw,136px); color:var(--pine-m);}
+  footer > .wrap{background:var(--pine); border-radius:var(--r-blk); max-width:1220px;
+    padding:clamp(40px,5vw,64px) clamp(26px,4.5vw,56px) 30px;}
+  .foot-g{display:grid; grid-template-columns:1.25fr 1fr 1fr 1fr; gap:34px; margin-bottom:40px;}
+  footer .logo{color:#fff; font-size:15px;}
+  footer h4{color:var(--pine-t); font-family:"Inter Tight",sans-serif; font-size:12px; text-transform:uppercase;
+    letter-spacing:.14em; margin-bottom:16px; font-weight:700;}
+  footer a{display:block; font-size:14px; margin-bottom:10px; color:var(--pine-m);}
+  footer a:hover{color:#fff;}
+  .foot-mail{font-weight:700; color:var(--gold) !important; font-size:14.5px !important;}
+  .foot-mail:hover{color:#E8B879 !important;}
+  .foot-bot{border-top:1px solid rgba(255,255,255,.14); padding-top:22px; font-size:12.5px; color:#8CA192;
+    display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+
+  /* modal */
+  .modal{position:fixed; inset:0; z-index:100; display:none; align-items:center; justify-content:center;
+    background:rgba(22,21,19,.6); backdrop-filter:blur(6px); padding:20px;}
+  .modal.open{display:flex;}
+  .m-card{background:var(--paper); border-radius:26px; padding:36px; width:100%; max-width:460px; position:relative;
+    animation:pop .26s ease; max-height:92vh; overflow:auto;}
+  @keyframes pop{from{opacity:0; transform:translateY(18px) scale(.98);} to{opacity:1; transform:none;}}
+  .m-x{position:absolute; top:16px; right:16px; width:38px; height:38px; border-radius:50%;
+    border:1px solid var(--line); background:transparent; font-size:15px; cursor:pointer; color:var(--mut); transition:.14s;}
+  .m-x:hover{background:var(--card); color:var(--ink);}
+  .m-card h3{font-size:19px; margin-bottom:8px; line-height:1.3; font-weight:700;}
+  .m-sub{font-size:14px; color:var(--mut); margin-bottom:18px;}
+  .m-msgrs{display:grid; gap:10px;}
+  .m-msgr{display:flex; align-items:center; gap:12px; border:1px solid var(--line); border-radius:999px;
+    padding:15px 22px; font-weight:600; font-size:15px; transition:.14s;}
+  .m-msgr:hover{border-color:var(--em); background:var(--em-w);}
+  .m-msgr svg{width:20px; height:20px; fill:var(--em-t);}
+  .ok-msg{text-align:center; padding:14px 0;}
+  .ok-msg .okc{width:60px; height:60px; margin:0 auto 14px; border-radius:50%; background:var(--em-w);
+    color:var(--em-t); font-size:26px; display:flex; align-items:center; justify-content:center;}
+
+  /* попапы «сотрудник в телефоне» (ТЗ п.2 и п.6): тёмная карточка + оранжевый iPhone */
+  .m-card.m-dark{background:var(--dark); color:var(--t-on-d); max-width:820px; padding:0; overflow:hidden;}
+  .m-dark .m-x{border-color:rgba(255,255,255,.28); color:#D9D2C6; background:rgba(0,0,0,.3); z-index:6;}
+  .m-dark .m-x:hover{background:rgba(255,255,255,.14); color:#fff;}
+  .m-grid{display:grid; grid-template-columns:1.06fr .94fr; align-items:stretch;}
+  .m-form{padding:clamp(26px,4vw,40px);}
+  .m-dark h3{color:var(--t-on-d); padding-right:26px;}
+  .m-dark .m-sub{color:var(--m-on-d);}
+  .m-dark .fld{background:rgba(255,255,255,.05); border-color:rgba(255,255,255,.22); color:#fff;}
+  .m-dark .fld::placeholder{color:var(--m-on-d);}
+  .m-dark .fld:focus{border-color:var(--em);}
+  .m-dark .agree{color:var(--m-on-d);}
+  .m-dark .agree a{color:var(--em);}
+  .m-note{font-size:12.5px; color:var(--m-on-d); text-align:center; margin-top:10px;}
+  .m-contact{margin-top:16px; padding-top:16px; border-top:1px solid rgba(255,255,255,.14);}
+  .m-contact b{display:block; font-size:13.5px; font-weight:600; margin-bottom:10px;}
+  .m-contact .row{display:flex; gap:8px;}
+  .m-contact .msg-i{border-color:rgba(255,255,255,.25);}
+  .m-contact .msg-i svg{fill:#F1EEE9;}
+  .m-contact .msg-i:hover{border-color:var(--em); background:rgba(208,128,48,.18);}
+  .m-phone-side{position:relative; display:flex; align-items:center; justify-content:center; padding:34px 24px;
+    background:radial-gradient(130% 90% at 82% 8%, #4A3A26 0%, #1D1B18 62%);}
+  .iphone{width:min(226px,100%); border-radius:40px; padding:9px;
+    background:linear-gradient(155deg,#E89A4C 0%,#D08030 45%,#B4661C 100%);
+    box-shadow:0 24px 60px rgba(0,0,0,.5), inset 0 1px 2px rgba(255,255,255,.35);}
+  .iphone .scr{position:relative; border-radius:32px; overflow:hidden; aspect-ratio:9/18.6; background:#141210;}
+  .iphone .scr>img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover;}
+  .iphone .scr::before{content:""; position:absolute; inset:0; z-index:1;
+    background:linear-gradient(180deg, rgba(10,8,6,.7) 0%, rgba(10,8,6,.32) 38%, transparent 58%, rgba(10,8,6,.74) 100%);}
+  .iphone .isl{position:absolute; top:9px; left:50%; transform:translateX(-50%); width:72px; height:19px;
+    border-radius:999px; background:#0A0908; z-index:3;}
+  .call-top{position:absolute; top:42px; left:0; right:0; z-index:2; text-align:center; color:#fff;
+    text-shadow:0 1px 8px rgba(0,0,0,.65);}
+  .call-top small{display:block; font-size:10px; letter-spacing:.14em; text-transform:uppercase;
+    color:#E5DCCE; opacity:.85; margin-bottom:6px;}
+  .call-top b{display:block; font-size:15.5px; font-weight:700; line-height:1.25; padding:0 14px;}
+  .call-top span{font-size:11px; color:#D9D2C6;}
+  .call-btns{position:absolute; bottom:22px; left:0; right:0; z-index:2; display:flex;
+    justify-content:space-evenly; align-items:center;}
+  .call-btn{width:46px; height:46px; border-radius:50%; display:flex; align-items:center; justify-content:center;}
+  .call-btn svg{width:20px; height:20px; fill:#fff;}
+  .call-btn.dec{background:#E0483E;}
+  .call-btn.dec svg{transform:rotate(135deg);}
+  .call-btn.acc{background:#3BB35B; animation:callpulse 1.7s ease-out infinite;}
+  @keyframes callpulse{0%{box-shadow:0 0 0 0 rgba(59,179,91,.55);} 100%{box-shadow:0 0 0 14px rgba(59,179,91,0);}}
+  @media (prefers-reduced-motion:reduce){ .call-btn.acc{animation:none;} }
+  @media (max-width:680px){
+    .m-grid{grid-template-columns:1fr;}
+    .m-phone-side{display:none;}
+    .m-card.m-dark{max-width:460px;}
+  }
+
+  @media (max-width:980px){
+    .hero-g,.help-in,.map-g{grid-template-columns:1fr;}
+    .help-photo{margin:0 calc(var(--hp)*-1) calc(var(--hp)*-1); min-height:360px;}
+    .hero-g{padding-top:clamp(72px,17vw,150px); gap:36px;}
+    .hero-img{margin-top:0;}
+    .objs,.revs,.lane-g{grid-template-columns:1fr 1fr;}
+    .menu{display:none;}
+    .burger{display:flex;}
+    .foot-g{grid-template-columns:1fr 1fr;}
+    .sec{padding:clamp(72px,10vw,96px) 0;}
+    .sec-h{flex-direction:column; align-items:flex-start; gap:12px; margin-bottom:36px;}
+  }
+  @media (max-width:640px){
+    .objs,.revs,.lane-g{grid-template-columns:1fr;}
+    .hero-cta{flex-direction:column;}
+    .hero-cta .btn{width:100%;}
+    .q-steps{gap:8px;}
+    .q-step{font-size:11px; white-space:nowrap;}
+    .q-line{min-width:16px;}
+    .phone,.msgs{display:none;}
+    .nav{gap:12px; height:72px;}
+    .nav > .btn-em{display:none;}
+    .quiz{padding:24px 18px; border-radius:24px;}
+    .seg button{min-width:100%;}
+    .hero{padding:8px 0 72px;}
+    .hero-note{left:10px; right:10px; max-width:none; font-size:12px; border-radius:18px;}
+    .help-in{padding:26px 20px;}
+    .map-frame{height:300px;}
+    footer{padding:0 12px 20px;}
+    .foot-g{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#"><img src="img/logo.png" alt="Home Sharing">HOME&nbsp;SHARING</a>
+    <nav class="menu">
+      <a href="#services">Сервисы</a><a href="#brokers">Брокеры</a>
+      <a href="#reviews">Отзывы</a><a href="#blog">Блог</a><a href="#contacts">Контакты</a>
+    </nav>
+    <div class="spacer"></div>
+    <div class="msgs">
+      <a class="msg-i" href="https://t.me/pro_homesharing" title="Telegram" aria-label="Telegram">
+        <svg viewBox="0 0 24 24"><path d="M21.9 4.1c.3-1.2-.9-1.7-1.9-1.3L2.7 9.5c-1.2.5-1.1 1.6-.2 1.9l4.6 1.4 10.6-6.7c.5-.3 1-.1.6.2l-8.6 7.8-.3 4.7c.5 0 .7-.2 1-.5l2.4-2.3 4.9 3.6c.9.5 1.6.2 1.8-.8L21.9 4.1z"/></svg></a>
+      <a class="msg-i" href="https://wa.me/79951215940" title="WhatsApp" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.6 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.6.8 2 .9 2.1.1.2.1.3 0 .5-.1.2-.1.3-.3.5l-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.7-.2.3.1 1.7.8 2 1 .3.2.5.2.6.4.1.1.1.7-.1 1.3z"/></svg></a>
+      <a class="msg-i" href="https://max.ru/join/7k3BMkvlZPxNHGkd-_hV7TVyXEL-NW7mwsxceq2Q7wY" title="MAX" aria-label="MAX">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-4.5 14V8h1.8l2.7 4 2.7-4h1.8v8h-1.8v-4.9L12 14.6l-2.7-3.5V16H7.5z"/></svg></a>
+    </div>
+    <a class="phone" href="tel:+79951215940">+7 (995) 121-59-40</a>
+    <button class="btn btn-em btn-sm" onclick="openModal('call')">Заказать звонок</button>
+    <button class="burger" onclick="document.getElementById('drawer').classList.add('open')" aria-label="Меню">
+      <i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<!-- MOBILE DRAWER -->
+<div class="drawer" id="drawer" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="drawer-in">
+    <a href="#services" onclick="drawer.classList.remove('open')">Сервисы</a>
+    <a href="#brokers" onclick="drawer.classList.remove('open')">Брокеры</a>
+    <a href="#reviews" onclick="drawer.classList.remove('open')">Отзывы</a>
+    <a href="#blog" onclick="drawer.classList.remove('open')">Блог</a>
+    <a href="#contacts" onclick="drawer.classList.remove('open')">Контакты</a>
+    <a href="tel:+79951215940">+7 (995) 121-59-40</a>
+    <button class="btn btn-em" onclick="drawer.classList.remove('open'); openModal('call')">Заказать звонок</button>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-word" aria-hidden="true">SHARING<span>.</span></div>
+  <div class="wrap hero-g">
+    <div class="rv">
+      <div class="eyebrow">Агентство недвижимости · Москва</div>
+      <h1>Недвижимость<br><em>без стресса.</em></h1>
+      <p class="sub">Продаём, покупаем и сдаём квартиры, загородные дома и коммерческие
+      объекты. Аренда — без комиссии. Каждая сделка — с юридическим сопровождением
+      и страхованием.</p>
+      <div class="hero-cta">
+        <a class="btn btn-em" href="#services">Подобрать решение</a>
+      </div>
+      <div class="hero-chips">
+        <span class="chip">Аренда без комиссии</span>
+        <span class="chip">Юридическое сопровождение</span>
+        <span class="chip">Страхование сделок</span>
+      </div>
+      <div class="hero-note"><span class="dot"></span> Сопровождаем сделку под ключ — от оценки до регистрации</div>
+    </div>
+    <div class="hero-img rv">
+      <img src="img/hero.jpg" alt="Интерьер квартиры" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section class="sec" id="services" style="padding-top:24px;">
+  <div class="wrap">
+    <div class="sec-h rv">
+      <div>
+        <h2>С чего начнём?</h2>
+      </div>
+      <p class="side">Два шага — и персональная консультация эксперта по вашей задаче. Бесплатно.</p>
+    </div>
+    <div class="quiz rv">
+      <div class="q-steps">
+        <div class="q-step on" id="qs1"><span class="n">1</span> Тип обращения</div>
+        <div class="q-line"><i id="qline"></i></div>
+        <div class="q-step" id="qs2"><span class="n">2</span> Тип объекта</div>
+      </div>
+      <div class="seg" id="seg">
+        <button data-v="Продать">Продать<small>оценим и найдём покупателя</small></button>
+        <button data-v="Купить">Купить<small>подберём и проверим объект</small></button>
+        <button data-v="Сдать">Сдать<small>без комиссии, с договором</small></button>
+      </div>
+      <div class="objs lock" id="objs">
+        <div class="obj" data-v="Квартира"><img src="img/kvartira.jpg" alt="Квартира" loading="lazy"><div class="tick">✓</div><div class="lab">Квартира</div></div>
+        <div class="obj" data-v="Загородная недвижимость"><img src="img/zagorod.jpg" alt="Загородная недвижимость" loading="lazy"><div class="tick">✓</div><div class="lab">Загородная недвижимость</div></div>
+        <div class="obj" data-v="Коммерческая недвижимость"><img src="img/kommer.jpg" alt="Коммерческая недвижимость" loading="lazy"><div class="tick">✓</div><div class="lab">Коммерческая недвижимость</div></div>
+        <div class="obj" data-v="Земельный участок"><img src="img/uchastok.jpg" alt="Земельный участок" loading="lazy"><div class="tick">✓</div><div class="lab">Земельный участок</div></div>
+        <div class="obj" data-v="Готовый бизнес"><img src="img/biznes.jpg" alt="Готовый бизнес" loading="lazy"><div class="tick">✓</div><div class="lab">Готовый бизнес</div></div>
+        <div class="obj" data-v="Машиноместо / гараж"><img src="img/mashinomesto.jpg" alt="Машиноместо" loading="lazy"><div class="tick">✓</div><div class="lab">Машиноместо / гараж</div></div>
+      </div>
+      <div class="q-foot">
+        <div class="q-sel" id="qsel">Выберите тип обращения, затем — тип объекта</div>
+        <button class="btn btn-em" id="qbtn" disabled onclick="openModal('lead', quizContext())">Получить консультацию</button>
+      </div>
+      <div class="quiz-agree">Нажимая кнопку, вы соглашаетесь с
+        <a href="politika.html">политикой обработки персональных данных</a>.</div>
+    </div>
+  </div>
+</section>
+
+<!-- BROKERS -->
+<section class="sec" id="brokers" style="padding-top:0;">
+  <div class="wrap">
+    <div class="sec-h rv">
+      <div>
+        <h2>Наши брокеры</h2>
+      </div>
+      <div class="arrows">
+        <button class="arr-btn" onclick="railScroll(-1)" aria-label="Назад">←</button>
+        <button class="arr-btn" onclick="railScroll(1)" aria-label="Вперёд">→</button>
+      </div>
+    </div>
+    <!-- Био Павла Кантура и Камиля Адуева — дословно из ТЗ владельца.
+         Био остальных — демо-заглушки без выдуманных фактов; заменить, когда владелец пришлёт данные. -->
+    <div class="rail-wrap rv">
+      <div class="rail" id="rail">
+        <div class="broker"><div class="bph"><img src="img/brokers/pavel-kantur.jpg" style="object-position:50% 25%;" alt="Павел Кантур" loading="lazy"></div><b>Павел Кантур</b><span class="role">Брокер по недвижимости</span>
+          <div class="bio"><ul>
+            <li>2 высших образования: горный инженер-геофизик (РГГРУ им. Серго Орджоникидзе), юрист (УМЦ им. В.В. Жириновского)</li>
+            <li>опыт работы в строительстве метро и геофизических исследованиях нефтегазовых месторождений</li>
+            <li>с 2016 года работает с жилой, коммерческой и загородной недвижимостью (аренда и продажи)</li>
+            <li>личные качества: целеустремлённость, ответственность, коммуникабельность, пунктуальность</li>
+          </ul></div>
+          <button class="bp-more" onclick="toggleBio(this)">Подробнее</button></div>
+        <div class="broker"><div class="bph"><img src="img/brokers/kamil-aduev.jpg" style="object-position:50% 14%;" alt="Камиль Адуев" loading="lazy"></div><b>Камиль Адуев</b><span class="role">Брокер по недвижимости</span>
+          <div class="bio"><ul>
+            <li>высшее образование в области IT (МГУНХ/ПОВТ) и различные курсы для повышения навыков</li>
+            <li>с 2020 года работает с жилой недвижимостью (аренда и продажи)</li>
+            <li>опыт работы в продажах B2B с 2016 года</li>
+            <li>личные качества: выявление и предотвращение рисков, кропотливый контроль процессов, пунктуальность</li>
+          </ul></div>
+          <button class="bp-more" onclick="toggleBio(this)">Подробнее</button></div>
+        <div class="broker"><div class="bph"><img src="img/brokers/evgeniy-kantur.jpg" style="object-position:50% 14%;" alt="Евгений Кантур" loading="lazy"></div><b>Евгений Кантур</b><span class="role">Брокер по недвижимости</span>
+          <div class="bio"><ul>
+            <li>работает с жилой и загородной недвижимостью: покупка, продажа, аренда</li>
+            <li>сопровождает сделку от первого показа до передачи ключей</li>
+            <li>личные качества: внимательность к деталям, спокойные переговоры, честность</li>
+          </ul></div>
+          <button class="bp-more" onclick="toggleBio(this)">Подробнее</button></div>
+        <div class="broker"><div class="bph"><img src="img/brokers/ekaterina-kondratenko.jpg" style="object-position:49% 12%;" alt="Екатерина Кондратенко" loading="lazy"></div><b>Екатерина Кондратенко</b><span class="role">Брокер по недвижимости</span>
+          <div class="bio"><ul>
+            <li>специализация — аренда и продажа квартир в Москве</li>
+            <li>помогает собственникам быстро и безопасно находить арендаторов и покупателей</li>
+            <li>личные качества: эмпатия, аккуратность в документах, оперативность</li>
+          </ul></div>
+          <button class="bp-more" onclick="toggleBio(this)">Подробнее</button></div>
+        <div class="broker"><div class="bph"><img src="img/brokers/evgeniy-kozin.jpg" style="object-position:50% 16%;" alt="Евгений Козин" loading="lazy"></div><b>Евгений Козин</b><span class="role">Брокер по недвижимости</span>
+          <div class="bio"><ul>
+            <li>работает с жилой и коммерческой недвижимостью</li>
+            <li>ведёт переговоры и проверку объектов на стороне клиента</li>
+            <li>личные качества: системный подход, надёжность, пунктуальность</li>
+          </ul></div>
+          <button class="bp-more" onclick="toggleBio(this)">Подробнее</button></div>
+        <div class="broker"><div class="bph"><img src="img/brokers/olga-risova.jpg" style="object-position:50% 16%;" alt="Ольга Рисова" loading="lazy"></div><b>Ольга Рисова</b><span class="role">Брокер по недвижимости</span>
+          <div class="bio"><ul>
+            <li>специализация — аренда квартир без комиссии для собственников</li>
+            <li>готовит объект к показу и берёт общение с арендаторами на себя</li>
+            <li>личные качества: коммуникабельность, вкус к презентации объекта, ответственность</li>
+          </ul></div>
+          <button class="bp-more" onclick="toggleBio(this)">Подробнее</button></div>
+        <div class="broker"><div class="bph"><img src="img/brokers/dana-perunova.jpg" style="object-position:50% 28%;" alt="Дана Перунова" loading="lazy"></div><b>Дана Перунова</b><span class="role">Брокер по недвижимости</span>
+          <div class="bio"><ul>
+            <li>работает с арендой жилой недвижимости</li>
+            <li>сопровождает собственника от фотосъёмки объекта до подписания договора</li>
+            <li>личные качества: доброжелательность, внимание к мелочам, организованность</li>
+          </ul></div>
+          <button class="bp-more" onclick="toggleBio(this)">Подробнее</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="sec" id="reviews" style="padding-top:0;">
+  <div class="wrap">
+    <div class="sec-h rv">
+      <div>
+        <h2>Отзывы клиентов</h2>
+      </div>
+      <p class="side">Нам доверяют продажу, покупку и аренду — читайте наши отзывы.</p>
+      <div class="arrows">
+        <button class="arr-btn" onclick="revScroll(-1)" aria-label="Назад">←</button>
+        <button class="arr-btn" onclick="revScroll(1)" aria-label="Вперёд">→</button>
+      </div>
+    </div>
+    <div class="rev-rail rv" id="revrail"><!-- js --></div>
+  </div>
+</section>
+
+<!-- BLOG: 4 ленты -->
+<section class="sec" id="blog" style="padding-top:0;">
+  <div class="wrap">
+    <div class="sec-h rv">
+      <div>
+        <h2>Полезное о недвижимости</h2>
+      </div>
+      <p class="side">Новости рынка, законы и понятные инструкции — обновляем каждый день.</p>
+    </div>
+    <div id="lanes"><!-- js --></div>
+  </div>
+</section>
+
+<!-- HELP BANNER -->
+<section class="sec" style="padding-top:0;">
+  <div class="wrap">
+    <div class="help rv">
+      <div class="help-in">
+        <div>
+          <div class="eyebrow">Персональный подход</div>
+          <h2>Помощь брокера</h2>
+          <p>Расскажите о задаче — брокер перезвонит, оценит объект и предложит план действий.
+          Бесплатно и без обязательств.</p>
+          <form class="help-form" onsubmit="return demoSubmit(event,this)">
+            <input class="fld" placeholder="Имя" required>
+            <input class="fld" placeholder="Телефон" inputmode="tel" required>
+            <button class="btn btn-em" style="width:100%;">Получить консультацию</button>
+            <label class="agree"><input type="checkbox" required checked> Я даю согласие на обработку
+              персональных данных в соответствии с <a href="politika.html">политикой конфиденциальности</a></label>
+          </form>
+          <div class="help-msgs">Связаться с экспертом:
+            <a class="msg-i" href="https://t.me/pro_homesharing" aria-label="Telegram"><svg viewBox="0 0 24 24"><path d="M21.9 4.1c.3-1.2-.9-1.7-1.9-1.3L2.7 9.5c-1.2.5-1.1 1.6-.2 1.9l4.6 1.4 10.6-6.7c.5-.3 1-.1.6.2l-8.6 7.8-.3 4.7c.5 0 .7-.2 1-.5l2.4-2.3 4.9 3.6c.9.5 1.6.2 1.8-.8L21.9 4.1z"/></svg></a>
+            <a class="msg-i" href="https://wa.me/79951215940" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.6 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.6.8 2 .9 2.1.1.2.1.3 0 .5-.1.2-.1.3-.3.5l-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.7-.2.3.1 1.7.8 2 1 .3.2.5.2.6.4.1.1.1.7-.1 1.3z"/></svg></a>
+            <a class="msg-i" href="https://max.ru/join/7k3BMkvlZPxNHGkd-_hV7TVyXEL-NW7mwsxceq2Q7wY" aria-label="MAX"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-4.5 14V8h1.8l2.7 4 2.7-4h1.8v8h-1.8v-4.9L12 14.6l-2.7-3.5V16H7.5z"/></svg></a>
+          </div>
+        </div>
+        <!-- Фото сотрудника — заглушка до получения фото от владельца (ТЗ п.10) -->
+        <div class="help-photo">
+          <img src="img/brokers/evgeniy-kozin.jpg" style="object-position:50% 22%;" alt="Евгений Козин — брокер по недвижимости">
+          <div class="help-name"><b>Евгений Козин</b><span>брокер по недвижимости · Home Sharing</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<section class="sec" id="contacts" style="padding-top:0; padding-bottom:0;">
+  <div class="wrap">
+    <div class="sec-h rv">
+      <div>
+        <h2>Приезжайте в офис</h2>
+      </div>
+    </div>
+    <div class="map-shell rv">
+      <div class="map-addr"><span class="k">Адрес</span><span class="v">Москва, Спартаковский пер., д. 2, стр. 1</span></div>
+      <div class="map-g">
+        <div class="map-box">
+          <!-- На боевом домене можно заменить на виджет Яндекс.Карт (map-widget) -->
+          <iframe class="map-frame" title="Карта офиса" height="520"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=37.6725%2C55.7725%2C37.6865%2C55.7795&amp;layer=mapnik&amp;marker=55.776%2C37.6795"></iframe>
+          <button class="btn btn-em map-write" onclick="openModal('write')">Написать нам</button>
+        </div>
+        <div class="map-card">
+          <div class="row"><span class="k">Телефон</span><span class="v"><a href="tel:+79951215940">+7 (995) 121-59-40</a></span></div>
+          <div class="row"><span class="k">Почта</span><span class="v"><a href="mailto:info@home-sharing.ru">info@home-sharing.ru</a></span></div>
+          <div class="fine">Отправляя заявку, вы даёте согласие на обработку персональных данных.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-g">
+      <div>
+        <div class="logo"><img src="img/logo.png" alt="" style="width:34px;height:34px;">HOME&nbsp;SHARING</div>
+        <p style="font-size:13.5px; margin-top:12px; max-width:260px;">Агентство недвижимости.
+        Аренда без комиссии, продажа без стресса.</p>
+        <a class="foot-mail" href="mailto:info@home-sharing.ru" style="margin-top:12px;">info@home-sharing.ru</a>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <a href="#services">Сервисы</a><a href="#brokers">Брокеры</a>
+        <a href="#reviews">Отзывы</a><a href="blog.html">Блог</a>
+      </div>
+      <div>
+        <h4>Соцсети</h4>
+        <a href="https://t.me/pro_homesharing">Telegram</a>
+        <a href="https://vk.ru/pro_home_sharing">ВКонтакте</a>
+        <a href="https://max.ru/join/7k3BMkvlZPxNHGkd-_hV7TVyXEL-NW7mwsxceq2Q7wY">Канал в MAX</a>
+        <a href="https://www.youtube.com/@home__sharing">YouTube</a>
+        <a href="https://instagram.com/home__sharing">Instagram*</a>
+      </div>
+      <div>
+        <h4>Документы</h4>
+        <a href="politika.html">Политика конфиденциальности</a>
+        <a href="politika.html">Согласие на обработку ПДн</a>
+        <a href="politika.html">Пользовательское соглашение</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© Home Sharing, 2026. Все права защищены.</span>
+      <span>* Instagram принадлежит Meta, признанной экстремистской в РФ</span>
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal" id="modal" onclick="if(event.target===this)closeModal()">
+  <div class="m-card">
+    <button class="m-x" onclick="closeModal()">✕</button>
+    <div id="m-body"></div>
+  </div>
+</div>
+
+<script>
+/* ---------- reveal on scroll ---------- */
+const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){e.target.classList.add('in'); io.unobserve(e.target);} }),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+/* ---------- quiz (по ТЗ: шаг1 → шаг2 → кнопка → попап) ---------- */
+let deal=null, objv=null;
+const seg=document.getElementById('seg'), objs=document.getElementById('objs'),
+      qbtn=document.getElementById('qbtn'), qsel=document.getElementById('qsel');
+function quizContext(){ return (deal||'')+' · '+(objv||''); }
+seg.querySelectorAll('button').forEach(b=>b.onclick=()=>{
+  seg.querySelectorAll('button').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on'); deal=b.dataset.v;
+  objs.classList.remove('lock');
+  document.getElementById('qline').style.width='100%';
+  document.getElementById('qs2').classList.add('on');
+  qsel.innerHTML='Вы выбрали: <b>'+deal+'</b>. Теперь — тип объекта.';
+  if(objv) qbtn.disabled=false;
+});
+objs.querySelectorAll('.obj').forEach(o=>o.onclick=()=>{
+  objs.querySelectorAll('.obj').forEach(x=>x.classList.remove('on'));
+  o.classList.add('on'); objv=o.dataset.v;
+  qsel.innerHTML='Вы выбрали: <b>'+deal+' · '+objv+'</b>';
+  qbtn.disabled=false;
+  qbtn.scrollIntoView({behavior:'smooth', block:'center'});
+});
+
+/* ---------- brokers rail ---------- */
+const rail=document.getElementById('rail');
+function railScroll(dir){ rail.scrollBy({left:dir*290, behavior:'smooth'}); }
+function toggleBio(btn){
+  const c=btn.closest('.broker'); c.classList.toggle('open');
+  btn.textContent=c.classList.contains('open')?'Свернуть':'Подробнее';
+}
+
+/* ---------- reviews carousel (ТЗ п.8: лента до 20 отзывов, имя клиента, без «Циан») ---------- */
+const REVIEWS=[
+ ['Анна','продажа квартиры','6 августа 2026','Продали квартиру за три недели. Всё сопровождение взяли на себя — от оценки до регистрации. Рекомендую.'],
+ ['Марина','сдача квартиры','2 августа 2026','Сдали квартиру без комиссии и с нормальным договором. Жильцов проверили, страховку оформили.'],
+ ['Дмитрий','покупка дома','28 июля 2026','Помогли купить дом в Подмосковье: проверка документов, торг, ипотека — всё сделали за нас.'],
+ ['Игорь и Светлана','аренда квартиры','21 июля 2026','Встретились на желаемой квартире, всё было доступно рассказано и показано. Заключили договор с собственником и въехали в тот же день. Мы довольны, спасибо большое.'],
+ ['Ольга','сдача квартиры','15 июля 2026','Квартира сдалась за четыре дня. Показы брокер провёл сам, мне осталось только подписать договор.'],
+ ['Сергей','продажа участка','8 июля 2026','Участок продавали давно и безуспешно. Здесь помогли с оценкой и предпродажной подготовкой — сделка закрылась за месяц.'],
+ ['Наталья','покупка квартиры','30 июня 2026','Проверили историю квартиры и собственников, нашли обременение, о котором продавец «забыл». Сделку переиграли безопасно.'],
+ ['Павел','аренда офиса','22 июня 2026','Искали помещение под офис. Подобрали три варианта за неделю, помогли согласовать условия аренды.'],
+ ['Екатерина','сдача квартиры','14 июня 2026','Понравилось, что все вопросы жильцов берёт на себя агентство. Деньги приходят вовремя, нервы целы.'],
+ ['Владимир','продажа квартиры','5 июня 2026','Цену предложили честную, без «завысим, а там посмотрим». Покупатель нашёлся за две недели.'],
+ ['Алина','покупка новостройки','27 мая 2026','Помогли выбрать ЖК и проверили договор долевого участия. Отвечали на вопросы даже поздно вечером.'],
+ ['Роман','аренда квартиры','19 мая 2026','Снял квартиру без комиссии. Договор нормальный, всё прозрачно, заехал через два дня после первого звонка.']];
+const revrail=document.getElementById('revrail');
+revrail.innerHTML=REVIEWS.map(([n,deal,date,text])=>`<div class="rev">
+  <div class="rev-top"><span class="avc">${n[0]}</span>
+    <div class="who"><b>${n}</b><span>${deal}</span></div></div>
+  <div class="rev-meta"><span>${date}</span><span class="stars">★★★★★</span></div>
+  <p>«${text}»</p></div>`).join('');
+function revScroll(dir){ revrail.scrollBy({left:dir*370, behavior:'smooth'}); }
+
+/* ---------- blog lanes (4 рубрики по ТЗ) ---------- */
+const RUBRICS=[
+ ['Новости',['blognews.jpg','news2.jpg','news3.jpg'],[
+   ['Спрос на аренду в Москве: что происходит этой осенью','12 авг 2026'],
+   ['Новые ЖК у метро Бауманская: обзор стартов продаж','8 авг 2026'],
+   ['Ставки по ипотеке снова изменились: что это значит для покупателя','1 авг 2026']]],
+ ['Законы',['blogzakon.jpg','zakon2.jpg','zakon3.jpg'],[
+   ['Изменения в правилах регистрации граждан: главное для собственника','10 авг 2026'],
+   ['Налог с продажи квартиры в 2026 году: когда можно не платить','5 авг 2026'],
+   ['Как правильно оформить задаток, чтобы не потерять деньги','29 июл 2026']]],
+ ['Инструкции',['bloginstr.jpg','instr2.jpg','instr3.jpg'],[
+   ['Какие документы нужны для продажи квартиры: полный чек-лист','11 авг 2026'],
+   ['Как проверить юридическую чистоту квартиры перед покупкой','6 авг 2026'],
+   ['Сдаёте квартиру впервые? Пошаговая инструкция','30 июл 2026']]],
+ ['Интересное',['blogint.jpg','int2.jpg','int3.jpg'],[
+   ['5 ошибок продавцов, из-за которых квартира «висит» месяцами','9 авг 2026'],
+   ['Хоумстейджинг: как подготовить квартиру к показу за выходные','4 авг 2026'],
+   ['Квартира или загородный дом: что выбирают семьи в 2026','27 июл 2026']]]];
+const lanes=document.getElementById('lanes');
+const BASE={'Новости':0,'Законы':8,'Инструкции':16,'Интересное':24};
+lanes.innerHTML=RUBRICS.map(([r,imgs,posts])=>`
+  <div class="lane rv">
+    <div class="lane-h"><h3>${r}</h3><a class="all" href="blog.html?r=${encodeURIComponent(r)}">Все статьи →</a></div>
+    <div class="lane-g">
+      ${posts.map((p,pi)=>`<a class="post" href="article.html?id=${BASE[r]+pi+1}">
+        <img src="img/${imgs[pi%imgs.length]}" alt="" loading="lazy">
+        <div class="pb"><span class="tag">${r}</span><h4>${p[0]}</h4>
+        <div class="meta">${p[1]} · Home Sharing</div></div></a>`).join('')}
+    </div>
+  </div>`).join('');
+document.querySelectorAll('#lanes .rv').forEach(el=>io.observe(el));
+
+/* ---------- modals ---------- */
+const modal=document.getElementById('modal'), mbody=document.getElementById('m-body'),
+      mcard=document.querySelector('.m-card'), drawer=document.getElementById('drawer');
+/* попапы «сотрудник в телефоне» (ТЗ п.2, п.6): оранжевый iPhone + фото сотрудника */
+const CALL_SVG='<svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>';
+function phoneSide(img, name){
+  return '<div class="m-phone-side"><div class="iphone"><div class="scr">'+img+
+    '<div class="isl"></div>'+
+    '<div class="call-top"><small>Home Sharing</small><b>'+name+'</b><span>входящий звонок…</span></div>'+
+    '<div class="call-btns"><span class="call-btn dec">'+CALL_SVG+'</span>'+
+    '<span class="call-btn acc">'+CALL_SVG+'</span></div>'+
+    '</div></div></div>';
+}
+function openModal(kind, ctx){
+  mcard.className='m-card'+((kind==='call'||kind==='lead')?' m-dark':'');
+  if(kind==='call'){
+    mbody.innerHTML=`<div class="m-grid"><div class="m-form">
+      <h3>Закажите звонок эксперта</h3>
+      <div class="m-sub">Укажите свои контакты — эксперт свяжется с вами в первую свободную минуту</div>
+      <form onsubmit="return demoSubmit(event,this)">
+      <input class="fld" placeholder="+7 (___) ___-__-__" inputmode="tel" required>
+      <input class="fld" placeholder="Ваше имя" required>
+      <button class="btn btn-em" style="width:100%;">Заказать звонок</button>
+      <div class="m-note">Обычно перезваниваем в течение 7 минут</div>
+      <label class="agree"><input type="checkbox" required checked> Согласие на обработку персональных данных
+      (<a href="politika.html">политика</a>)</label></form></div>`+
+      phoneSide('<img src="img/brokers/ekaterina-kondratenko.jpg" style="object-position:49% 6%;" alt="Екатерина Кондратенко">','Екатерина Кондратенко')+
+      `</div>`;
+  } else if(kind==='lead'){
+    mbody.innerHTML=`<div class="m-grid"><div class="m-form">
+      <h3>Оставьте заявку и получите консультацию эксперта</h3>
+      <div class="m-sub">${ctx||''}</div>
+      <form onsubmit="return demoSubmit(event,this)">
+      <input class="fld" placeholder="ФИО" required>
+      <input class="fld" placeholder="+7 (___) ___-__-__" inputmode="tel" required>
+      <button class="btn btn-em" style="width:100%;">Получить консультацию</button>
+      <label class="agree"><input type="checkbox" required checked> Я даю согласие на обработку персональных
+      данных в соответствии с <a href="politika.html">политикой конфиденциальности</a></label></form>
+      <div class="m-contact"><b>Свяжитесь с нами</b>
+      <div class="row">
+      <a class="msg-i" href="https://t.me/pro_homesharing" title="Telegram" aria-label="Telegram"><svg viewBox="0 0 24 24"><path d="M21.9 4.1c.3-1.2-.9-1.7-1.9-1.3L2.7 9.5c-1.2.5-1.1 1.6-.2 1.9l4.6 1.4 10.6-6.7c.5-.3 1-.1.6.2l-8.6 7.8-.3 4.7c.5 0 .7-.2 1-.5l2.4-2.3 4.9 3.6c.9.5 1.6.2 1.8-.8L21.9 4.1z"/></svg></a>
+      <a class="msg-i" href="https://wa.me/79951215940" title="WhatsApp" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.6 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.6.8 2 .9 2.1.1.2.1.3 0 .5-.1.2-.1.3-.3.5l-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.7-.2.3.1 1.7.8 2 1 .3.2.5.2.6.4.1.1.1.7-.1 1.3z"/></svg></a>
+      <a class="msg-i" href="https://max.ru/join/7k3BMkvlZPxNHGkd-_hV7TVyXEL-NW7mwsxceq2Q7wY" title="MAX" aria-label="MAX"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-4.5 14V8h1.8l2.7 4 2.7-4h1.8v8h-1.8v-4.9L12 14.6l-2.7-3.5V16H7.5z"/></svg></a>
+      </div></div></div>`+
+      phoneSide('<img src="img/brokers/evgeniy-kozin.jpg" style="object-position:50% 10%;" alt="Эксперт по недвижимости">','Эксперт по недвижимости')+
+      `</div>`;
+  } else if(kind==='write'){
+    mbody.innerHTML=`<h3>Написать нам</h3><div class="m-sub">Выберите удобный мессенджер</div>
+      <div class="m-msgrs">
+      <a class="m-msgr" href="https://t.me/pro_homesharing"><svg viewBox="0 0 24 24"><path d="M21.9 4.1c.3-1.2-.9-1.7-1.9-1.3L2.7 9.5c-1.2.5-1.1 1.6-.2 1.9l4.6 1.4 10.6-6.7c.5-.3 1-.1.6.2l-8.6 7.8-.3 4.7c.5 0 .7-.2 1-.5l2.4-2.3 4.9 3.6c.9.5 1.6.2 1.8-.8L21.9 4.1z"/></svg> Telegram</a>
+      <a class="m-msgr" href="https://wa.me/79951215940"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg> WhatsApp</a>
+      <a class="m-msgr" href="https://max.ru/join/7k3BMkvlZPxNHGkd-_hV7TVyXEL-NW7mwsxceq2Q7wY"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-4.5 14V8h1.8l2.7 4 2.7-4h1.8v8h-1.8v-4.9L12 14.6l-2.7-3.5V16H7.5z"/></svg> MAX</a></div>
+      <div class="fine" style="text-align:center; margin-top:12px;">Отправляя заявку, вы даёте согласие на обработку персональных данных.</div>`;
+  }
+  modal.classList.add('open');
+}
+function closeModal(){ modal.classList.remove('open'); }
+document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ closeModal(); drawer.classList.remove('open'); } });
+function demoSubmit(e){
+  e.preventDefault();
+  mcard.className='m-card';
+  if(!modal.classList.contains('open')) modal.classList.add('open');
+  mbody.innerHTML=`<div class="ok-msg"><div class="okc">✓</div>
+    <h3>Заявка принята!</h3><div class="m-sub" style="margin-top:6px;">Мы свяжемся с вами в ближайшее время.</div>
+    <button class="btn btn-ghost" onclick="closeModal()">Закрыть</button></div>`;
+  return false;
+}
+</script>
+</body>
+</html>
