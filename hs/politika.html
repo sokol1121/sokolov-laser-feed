@@ -55,6 +55,11 @@
     display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; font-size:13px; max-width:1220px;}
   footer a{color:#B4C4B8;}
   @media (max-width:640px){
+    /* таблица и длинные подстановки ездили вбок */
+    .tw{overflow-x:auto; -webkit-overflow-scrolling:touch; margin-bottom:18px;}
+    table{min-width:520px;}
+    .fill{white-space:normal;}
+    body{overflow-x:hidden;}
     .nav{height:64px; gap:10px;}
     .docs a{width:100%; justify-content:center;}
     footer{padding:0 12px 18px;}
@@ -102,7 +107,7 @@
     с условиями настоящей Политики.</p>
 
     <h3>2. Какие данные мы собираем</h3>
-    <table>
+    <div class="tw"><table>
       <tr><th>Данные</th><th>Откуда</th><th>Зачем</th></tr>
       <tr><td>Имя (или ФИО)</td><td>формы на Сайте</td><td>обратиться к вам по имени при звонке</td></tr>
       <tr><td>Номер телефона</td><td>формы на Сайте</td><td>перезвонить и обсудить задачу</td></tr>
@@ -110,7 +115,7 @@
       <tr><td>Сведения о запросе: тип сделки, тип объекта, район, бюджет</td><td>квиз на Сайте</td><td>подобрать подходящее предложение</td></tr>
       <tr><td>Обезличенные данные о посещении: IP-адрес, тип браузера, источник перехода, время визита</td>
           <td>файлы cookie, счётчики статистики</td><td>понимать, как работает Сайт, и улучшать его</td></tr>
-    </table>
+    </table></div>
     <p>Оператор не обрабатывает специальные категории персональных данных (о состоянии здоровья,
     расовой и национальной принадлежности, политических взглядах, религиозных убеждениях)
     и биометрические персональные данные.</p>
