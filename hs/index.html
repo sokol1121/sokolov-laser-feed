@@ -412,7 +412,7 @@
     .map-frame{height:240px;}
     .map-write{position:static !important; width:100%; margin-top:12px;}
     /* попасть пальцем */
-    footer a{display:inline-block; padding:6px 0;}
+    footer a{display:block; padding:9px 0; margin-bottom:0;}
     .quiz-agree{font-size:13px; color:var(--ink2);}
     .rev p{font-size:15px;}
     /* нижняя панель: заявка всегда под рукой, не надо листать семь экранов */
@@ -435,6 +435,31 @@
   .drawer-x{position:sticky; top:0; margin-left:auto; display:flex; align-items:center; justify-content:center;
     width:44px; height:44px; border:1px solid var(--line); border-radius:50%; background:#fff;
     font-size:24px; line-height:1; color:var(--ink); cursor:pointer;}
+
+  @media (max-width:640px){
+    footer > .wrap{padding:32px 22px 24px;}
+    .foot-g{grid-template-columns:1fr; gap:0; margin-bottom:26px;}
+    .foot-g > div + div{border-top:1px solid rgba(255,255,255,.12); margin-top:22px; padding-top:22px;}
+    footer h4{margin-bottom:10px;}
+    footer a{display:block; padding:9px 0; margin-bottom:0; font-size:15px;}
+    .foot-bot{flex-direction:column; gap:8px; text-align:left;}
+    .foot-mail{padding:9px 0 !important;}
+  }
+
+  /* первый экран на телефоне: убираем декор и лишние слова —
+     сверху должно быть только обещание и кнопка */
+  .sub-short{display:none;}
+  @media (max-width:640px){
+    .hero-word{display:none !important;}      /* огромное «SHARING.» на узком экране только мешает */
+    .sub-full{display:none;}
+    .sub-short{display:block;}
+    .hero-note{display:none;}                 /* повторяет смысл плашек ниже */
+    .hero-g{padding-top:26px !important;}
+    .hero-chips{gap:8px;}
+    .hero-chips .chip{font-size:13px; padding:9px 14px;}
+    h1{font-size:clamp(30px,9vw,40px);}
+    .hero .sub{font-size:16px;}
+  }
 </style>
 </head>
 <body>
@@ -483,9 +508,11 @@
     <div class="rv">
       <div class="eyebrow">Агентство недвижимости · Москва</div>
       <h1>Недвижимость<br><em>без стресса.</em></h1>
-      <p class="sub">Продаём, покупаем и сдаём квартиры, загородные дома и коммерческие
+      <p class="sub sub-full">Продаём, покупаем и сдаём квартиры, загородные дома и коммерческие
       объекты. Аренда — без комиссии. Каждая сделка — с юридическим сопровождением
       и страхованием.</p>
+      <p class="sub sub-short">Продаём, покупаем и сдаём. Аренда без комиссии,
+      каждая сделка — с юристом и страховкой.</p>
       <div class="hero-cta">
         <a class="btn btn-em" href="#services">Подобрать решение</a>
       </div>
@@ -723,7 +750,6 @@
         <a href="https://vk.ru/pro_home_sharing">ВКонтакте</a>
         <a href="https://max.ru/join/7k3BMkvlZPxNHGkd-_hV7TVyXEL-NW7mwsxceq2Q7wY">Канал в MAX</a>
         <a href="https://www.youtube.com/@home__sharing">YouTube</a>
-        <a href="https://instagram.com/home__sharing">Instagram*</a>
       </div>
       <div>
         <h4>Документы</h4>
@@ -734,7 +760,6 @@
     </div>
     <div class="foot-bot">
       <span>© Home Sharing, 2026. Все права защищены.</span>
-      <span>* Instagram принадлежит Meta, признанной экстремистской в РФ</span>
     </div>
   </div>
 </footer>
